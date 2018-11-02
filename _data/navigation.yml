@@ -15,14 +15,11 @@
 - title: Resources
   url: /resources/
 
-# - title: Tutorials
-#   url: /tutorials/
+- title: Blog
+  url: /blog/
 
 # - title: Theme Setup
 #   url: /theme-setup/
-
-- title: Reviews
-  url: /blog/
 
 - title: Search
   url: /search/
