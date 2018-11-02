@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Digital Archive Reviews
-excerpt: "Reviews of digital archives, authored by students."
+title: Blog
+excerpt: "An archive of blog posts sorted by date."
 search_omit: true
 ---
 
