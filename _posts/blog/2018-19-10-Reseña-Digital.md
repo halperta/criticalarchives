@@ -25,7 +25,7 @@ Tukulpan zugü: Historias mapuche
 
 Referencias
 
-Antileo, Enrique y Claudio Alvarado. _Fütra Waria o Capital del Reyno. Imágenes, escrituras e historias mapuche en la gran ciudad 1927-1992._ Santiago: Ediciones Comunidad de Historia Mapuche, 2018. 1era edición. 
+Antileo, Enrique & Claudio Alvarado. _Fütra Waria o Capital del Reyno. Imágenes, escrituras e historias mapuche en la gran ciudad 1927-1992._ Santiago: Ediciones Comunidad de Historia Mapuche, 2018. 1era edición. 
 
 Huinca, H.  “Los mapuche del Jardin de Aclimatación de París en 1883: objetos de la ciencia colonial y políticas de investigación contemporanéas.” Taiñ fijke xipa rakizuameluwun: Historia, colonialismo y resistencia desde el país Mapuche. Editado por Héctor Nahuelpan y otros. Temuco: Ediciones Comunidad de Historia Mapuche, 2013. 2da edición. 89-117
 
