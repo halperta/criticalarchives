@@ -1,3 +1,14 @@
+---
+Layout: post
+title: "Los Archivos de Gabriel García Márquez: una Relación Polémica."
+modified:
+categories: blog
+excerpt: 
+author: pablomillalen
+image:
+  feature:
+---
+
 Reseña del archivo digital "Archivo Mapuche Warria Mew. Waria ñi tukulpan dungu/ Ampliando los horizontes de la memoria."
 
 _Archivo Mapuche Warria Mew. Waria ñi tukulpan dungu/ Ampliando los horizontes de la memoria._ Proyecto Financiado por el Fondo Nacional de Desarrollo Cultural y las Artes.    Web. 06 de octubre de 2018 [Mapuche Waria Mew](http://www.mapuchewariamew.cl)
