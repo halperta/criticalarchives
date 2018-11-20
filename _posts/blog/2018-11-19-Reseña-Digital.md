@@ -1,10 +1,10 @@
 ---
 Layout: post
-title: "Reseña del archivo digital "Archivo Mapuche Warria Mew."
+title: "Reseña del archivo digital *Archivo Mapuche Warria Mew.*" 
 modified:
-categories: blog
+categories: blog 
 excerpt: 
-author: pablomillalen
+author: pablomillalen 
 image:
   feature:
 ---
