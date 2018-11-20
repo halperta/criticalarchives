@@ -1,6 +1,6 @@
 ---
 Layout: post
-title: "Reseña del archivo digital *Archivo Mapuche Warria Mew.*" 
+title: "Reseña del archivo digital Archivo Mapuche Warria Mew." 
 modified:
 categories: blog 
 excerpt: 
