@@ -1,6 +1,6 @@
 ---
 Layout: post
-title: "Los Archivos de Gabriel García Márquez: una Relación Polémica."
+title: "Reseña del archivo digital "Archivo Mapuche Warria Mew."
 modified:
 categories: blog
 excerpt: 
