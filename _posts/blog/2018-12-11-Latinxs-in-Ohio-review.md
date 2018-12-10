@@ -3,9 +3,9 @@ layout: post
 title: "Latinxs in Ohio"
 modified:
 categories: blog
-excerpt: "centralizing and conserving the oral history of Latinxs" 
+excerpt: "Centralizing and conserving the oral history of Latinxs" 
 tags: []
-author: MEd1stgen 
+author: med1stgen 
 image:
   feature:
 ---
