@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Latinxs in Ohio"
@@ -10,9 +9,6 @@ author: MEd1stgen
 image:
   feature:
 ---
-
-
-#Latinxs in Ohio 
  
 Who are the Latinxs living in Ohio? No need to dive into physical documents at an archival institution; Dr. Elena Foulis, 
 Latinx scholar and senior lecture at Ohio State University (OSU), has recorded and created a digital collection, [Oral 
@@ -80,7 +76,7 @@ past.
 
 
 
-                                                     ## Works Cited
+## Works Cited
 
 1. Caswell, Michelle, Marika Cifor, and Mario H. Ramirez. “To Suddenly Discover Yourself Existing: Uncovering the Impact of Community Archives.”
 *The American Archivist*, vol. 79, no. 1, 2016, pp. 56-81. 
