@@ -53,8 +53,17 @@ ashleyngarcia:
   avatar: 
   twitter: ashngar
   google:
-    plus:    
-
+    plus:     
+    
+YenibelRuiz:
+  name: Yenibel Ruiz
+  email: yenibel@utexas.edu
+  bio: Graduate Student, Department of Spanish and Portuguese
+  avatar: 
+  twitter: 
+  google:
+    plus:  
+    
 jessicasanchezflores:
   name: Jessica L Sánchez Flores
   email: jlsanchez@utexas.edu
@@ -80,7 +89,18 @@ joshuagob:
   avatar: jgob.png
   twitter: jgob
   google:
-    plus:     
+    plus:
+    
+NicoLarrondo:
+  name: Nicole Larrondo
+  web: http://nicolelarrondo.com
+  email: nicolelarrondo@utexas.edu
+  bio: Graduate Student, Department of Spanish and Portuguese
+  avatar: nico.jpg
+  twitter: misaito
+  google:
+    plus:
+    
 
 naukilina:
   name: Montserrat Madariaga
@@ -91,6 +111,7 @@ naukilina:
   google:
     plus:
 
+
 med1stgen:
   name: Tiffany G
   email: tguridy@utexas.edu
@@ -99,3 +120,13 @@ med1stgen:
   twitter: 
   google:
     plus:
+
+pablomillalen:
+  name: Pablo Millalen
+  email: pmillalen@utexas.edu
+  bio: Graduate Student, Department of Latin American Studies
+  avatar: 
+  twitter: PMillalen 
+  google:
+    plus: 
+
