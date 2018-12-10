@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Authorship and Advocacy: A Review of The Native American Petitions Dataverse
+title: "Authorship and Advocacy: A Review of The Native American Petitions Dataverse"
 modified:
 categories: blog
 excerpt: "Embedded in the (digital) archive are structures of power. The Native American Petitions Dataverse shifts those structures by attributing both tribal and individual Native authorship to hundreds of colonial and early American petitions and memorials."
 tags: []
 author: alinascott
-image: alinascott.jpg
+image: 
   feature:
 ---
 
