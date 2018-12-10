@@ -13,6 +13,7 @@ image:
 [Native American Petitions Dataverse](https://dataverse.harvard.edu/dataverse.xhtml?alias=nativeamericanpetitions) Accessed November 1, 2018.   
 *Reviewed by Alina Scott, Department of History. The University of Texas at Austin.*   
 
+
 **Introduction**  
 Embedded in the (digital) archive are structures of power. [The Native American Petitions Dataverse](https://dataverse.harvard.edu/dataverse/nativeamericanpetitions) shifts those structures by attributing both tribal and individual Native authorship to hundreds of colonial  and early American era petitions and memorials. However, is attributing authorship the sole responsibility of those engaging with digital collections? And even more simply, how does one acknowledge Indigenous authorship in the colonial and early American archive? Jane Anderson addresses this in part by saying “wherein colonialism is understood as a cultural project of control, archives function as the locus for the cultural technology of rule” (234). A "decolonial" project, then, would be would offer counter-narratives to the dominant methods of organizing, the hierarchy of archival sources, and the voices represented in the colonial archive. 
 
