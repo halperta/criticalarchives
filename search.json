@@ -1,25 +1,227 @@
----
-sitemap: false
----
-
 [
-{% for post in site.posts %}
-  {% if post.title != null and post.title != empty and post.search_omit != true %}
-    {% if forloop.index > 1 %},{% endif %}{
-      "title"			: {{ post.title | jsonify }},
-      "link"			: "{{ site.url }}{{ post.url }}",
-      "excerpt"		: "{{ post.excerpt | markdownify | strip_html | strip_newlines | escape_once | remove: '\[' | remove: '\]' | remove: '\(' | remove: '\)' }}"
-    }
-  {% endif %}
-{% endfor %}
 
-{% for page in site.pages %}
-  {% if page.layout != 'none' and page.layout != 'none' and page.title != null and page.title != empty and page.search_omit != true %}
-    {% if forloop.index > 1 %},{% endif %}{
-      "title"			: {{ page.title | jsonify }},
-      "link"			: "{{ site.url }}{{ page.url | replace: 'index.html', '' }}",
-      "excerpt"		: "{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}"
+  
+    {
+      "title"			: "Authorship and Advocacy: The Native American Petitions Dataverse",
+      "link"			: "http://localhost:4000/blog/napetitions-review/",
+      "excerpt"		: "Embedded in the (digital) archive are structures of power. The Native American Petitions Dataverse shifts those structures by attributing both tribal and individual Native authorship to hundreds of colonial and early American petitions and memorials."
     }
-  {%endif%}
-{% endfor %}
+  
+
+  
+    ,{
+      "title"			: "Latinxs in Ohio",
+      "link"			: "http://localhost:4000/blog/Latinxs-in-Ohio-review/",
+      "excerpt"		: "Centralizing and conserving the oral history of Latinxs"
+    }
+  
+
+  
+    ,{
+      "title"			: "Proyecto 30másChile",
+      "link"			: "http://localhost:4000/blog/30masChile/",
+      "excerpt"		: "Review para proyecto conmemorativo de los 30 años del Plebiscito de 1988 en Chile"
+    }
+  
+
+  
+    ,{
+      "title"			: "Reseña del archivo digital Archivo Mapuche Warria Mew.",
+      "link"			: "http://localhost:4000/blog/Rese%C3%B1a-Digital/",
+      "excerpt"		: "Reseña del archivo digital “Archivo Mapuche Warria Mew. Waria ñi tukulpan dungu/ Ampliando los horizontes de la memoria.”"
+    }
+  
+
+  
+    ,{
+      "title"			: "Los Archivos de Gabriel García Márquez: una Relación Polémica.",
+      "link"			: "http://localhost:4000/blog/ReviewGarc%C3%ADaM%C3%A1rqu/",
+      "excerpt"		: "Gabriel García Márquez.  Harry Ransom Center.  The University of Texas. Web. 16 de Octubre 2018.   https://hrc.contentdm.oclc.org/digital/collection/p15878coll51/"
+    }
+  
+
+  
+    ,{
+      "title"			: "Review of the Ticha Project",
+      "link"			: "http://localhost:4000/blog/ticha-review/",
+      "excerpt"		: "Ticha is empowering the Zapotec community through the availability and accessibility of colonial texts that strengthen their language and their culture."
+    }
+  
+
+  
+    ,{
+      "title"			: "The Living Archive of Aboriginal Languages: A big step towards giving back",
+      "link"			: "http://localhost:4000/blog/review-living-archive/",
+      "excerpt"		: "The digital repository contains over 3000 books written in 50 Indigenous languages of the Northern Territory of Australia."
+    }
+  
+
+  
+    ,{
+      "title"			: "Review of the Mexico Project",
+      "link"			: "http://localhost:4000/blog/Mexico-Project/",
+      "excerpt"		: "The Mexico Project is a digital resource organized under the National Security Archive, consisting of primary source documents from government agencies in both the United States and Mexico."
+    }
+  
+
+  
+    ,{
+      "title"			: "Queering the Method",
+      "link"			: "http://localhost:4000/blog/4rios-review/",
+      "excerpt"		: "…the unique construction of this archive calls into question institutionalized norms regarding what an archive is and how it functions."
+    }
+  
+
+  
+    ,{
+      "title"			: "Queerizando el método",
+      "link"			: "http://localhost:4000/blog/4rios-espanol/",
+      "excerpt"		: "…la construcción única del archivo ‘4 Ríos’ cuestiona las normas institucionalizadas en torno a qué elementos constituyen un archivo y cómo funcionan."
+    }
+  
+
+  
+    ,{
+      "title"			: "Review of the Periódicos e literatura Collection",
+      "link"			: "http://localhost:4000/blog/review-of-periodicos-e-literatura/",
+      "excerpt"		: "A curated collection of materials digitized by the National Digital Library of Brazil"
+    }
+  
+
+  
+    ,{
+      "title"			: "Reseña de la Colección Escritos de Mujeres",
+      "link"			: "http://localhost:4000/blog/rese%C3%B1a-coleccion-escritos-de-mujeres/",
+      "excerpt"		: "Volver a estos archivos y publicarlos no solo implica escuchar la voz de las mujeres de la época, sino que también identificar el poder que ha estado atado a estas narrativas."
+    }
+  
+
+  
+    ,{
+      "title"			: "Review for Más de 72",
+      "link"			: "http://localhost:4000/blog/Mas-de-72/",
+      "excerpt"		: "Más de 72 is a digital project that collects primary sources pertaining to the massacre of 72 migrants from Central and South America and India."
+    }
+  
+
+  
+    ,{
+      "title"			: "Review of the Onda Latina Collection",
+      "link"			: "http://localhost:4000/blog/camille-garcia-digital-archives-review/",
+      "excerpt"		: "It’s always particularly interesting to find an archival resource that connects us more deeply to our subject’s humanity"
+    }
+  
+
+  
+    ,{
+      "title"			: "September Events",
+      "link"			: "http://localhost:4000/blog/SeptemberEvents/",
+      "excerpt"		: "September Events at UT Austin"
+    }
+  
+
+  
+    ,{
+      "title"			: "Writing in Markdown",
+      "link"			: "http://localhost:4000/tutorial/writing-in-markdown/",
+      "excerpt"		: "Writing an article in markdown"
+    }
+  
+
+  
+    ,{
+      "title"			: "Publishing a Digital Review",
+      "link"			: "http://localhost:4000/tutorial/blog-instructions/",
+      "excerpt"		: "In this course, you will be invited to share a critical reflection with the public on this course website."
+    }
+  
+
+  
+    ,{
+      "title"			: "Welcome",
+      "link"			: "http://localhost:4000/blog/welcome/",
+      "excerpt"		: "Welcome to “Critical Digital Archives,” a graduate seminar taught by Kelly McDonough and Hannah Alpert-Abrams."
+    }
+  
+
+
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Resources",
+      "link"			: "http://localhost:4000/resources/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "About This Course",
+      "link"			: "http://localhost:4000/about/",
+      "excerpt"		: "This course explores theoretical and practical issues related to the creation and access of Latin American digital archives."
+    }
+  
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Schedule",
+      "link"			: "http://localhost:4000/schedule/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+    ,{
+      "title"			: "Theme Setup",
+      "link"			: "http://localhost:4000/theme-setup/",
+      "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
+    }
+  
+
+  
+    ,{
+      "title"			: "Instructors",
+      "link"			: "http://localhost:4000/instructors/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Assignments",
+      "link"			: "http://localhost:4000/assignments/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Final Projects",
+      "link"			: "http://localhost:4000/projects/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+
+  
+
+  
+
 ]

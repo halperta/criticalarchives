@@ -1,43 +1,1048 @@
----
-sitemap: false
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">{{ site.title }}</title>
+<title type="text">Critical Digital Archives</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="{{ site.url }}/feed.xml" />
-<link rel="alternate" type="text/html" href="{{ site.url }}" />
-<updated>{{ site.time | date_to_xmlschema }}</updated>
-<id>{{ site.url }}/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2019-02-20T10:50:25-05:00</updated>
+<id>http://localhost:4000/</id>
 <author>
-  <name>{{ site.owner.name }}</name>
-  <uri>{{ site.url }}/</uri>
-  {% if site.owner.email %}<email>{{ site.owner.email }}</email>{% endif %}
+  <name>Hannah Alpert-Abrams</name>
+  <uri>http://localhost:4000/</uri>
+  <email>h.alpert-abrams@austin.utexas.edu</email>
 </author>
-{% for post in site.posts limit:20 %}
-{% if post.author %}
-  {% assign author = site.data.authors[post.author] %}
-{% else %}
-  {% assign author = site.owner %}
-{% endif %}
+
+
 <entry>
-  <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
-  <link rel="alternate" type="text/html" href="{{ site.url }}{{ post.url }}" />
-  <id>{{ site.url }}{{ post.id }}</id>
-  {% if post.modified %}<updated>{{ post.modified | to_xmlschema }}T00:00:00-00:00</updated>
-  <published>{{ post.date | date_to_xmlschema }}</published>
-  {% else %}<published>{{ post.date | date_to_xmlschema }}</published>
-  <updated>{{ post.date | date_to_xmlschema }}</updated>{% endif %}
+  <title type="html"><![CDATA[Authorship and Advocacy: The Native American Petitions Dataverse]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/napetitions-review/" />
+  <id>http://localhost:4000/blog/napetitions-review</id>
+  <published>2018-12-11T00:00:00-05:00</published>
+  <updated>2018-12-11T00:00:00-05:00</updated>
   <author>
-    <name>{{ author.name }}</name>
-    <uri>{{ site.url }}</uri>
-    {% if author.email %}<email>{{ author.email }}</email>{% endif %}
+    <name>Alina Scott</name>
+    <uri>http://localhost:4000</uri>
+    <email>alinascott@utexas.edu</email>
   </author>
   <content type="html">
-    {{ post.content | xml_escape }}
-    {% include feed-footer.html %}
+    &lt;p&gt;&lt;a href=&quot;https://dataverse.harvard.edu/dataverse.xhtml?alias=nativeamericanpetitions&quot;&gt;Native American Petitions Dataverse&lt;/a&gt; Accessed November 1, 2018. &lt;br /&gt;
+&lt;em&gt;Reviewed by Alina Scott, Department of History. The University of Texas at Austin.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br /&gt;
+Embedded in the (digital) archive are structures of power. &lt;a href=&quot;https://dataverse.harvard.edu/dataverse/nativeamericanpetitions&quot;&gt;The Native American Petitions Dataverse&lt;/a&gt; shifts those structures by attributing both tribal and individual Native authorship to hundreds of colonial  and early American era petitions and memorials. However, is attributing authorship the sole responsibility of those engaging with digital collections? And even more simply, how does one acknowledge Indigenous authorship in the colonial and early American archive? Jane Anderson addresses this in part by saying “wherein colonialism is understood as a cultural project of control, archives function as the locus for the cultural technology of rule” (234). A “decolonial” project, then, would be would offer counter-narratives to the dominant methods of organizing, the hierarchy of archival sources, and the voices represented in the colonial archive.&lt;/p&gt;
+
+&lt;p&gt;By that definition, the digital structure of and content included in the &lt;a href=&quot;https://dataverse.harvard.edu/dataverse/nativeamericanpetitions&quot;&gt;The Native American Petitions Dataverse&lt;/a&gt; provide a key example of a decolonial project through the Indigenous petition. The eighteenth and nineteenth-century petition is critical to understanding the engagement of people of color with political institutions and individuals. Much like colonial era church attendance logs can be used to understand religiosity, petitions (and the signatures of the signers) offer a way into the areas of tension between legislators and those frustrated with legislation in the early years of the Republic. For many people excluded from suffrage, petitioning provided an almost direct line to governing bodies. Native people in particular used petitioning intra-tribally and externally. In the Northeast, Native peoples appealed to legislative bodies for equality long before petitioning’s popularization in the abolitionist and women’s suffrage movements in the nineteenth and twentieth centuries. Collective and individual petitioning efforts are essential to nuanced tellings of Native histories, and therefore, an important area of focus for digital humanists.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt; &lt;br /&gt;
+The Native American Petitions Dataverse offers users direct access to high resolution digitized petitions from the Massachusetts State Archive and the National Archives and Records Administration.  This project is an extension of the digitization efforts of Harvard’s Radcliffe Institute for Advanced Study and is led by head investigator and Professor of Government, Daniel Carpenter, and Tribal Archivist for the Mashpee Wampanoag Community, Stephen R. Curley. This collection hosts digitized petitions by, first, Native individuals, groups, towns or nations (Abenaki, Chappaquiddick, Maliseet, Mohawk, Mohegan, Nipmuc, Penobscot, Pequot, Punkapoag, Wampanoag to name a few), to the Massachusetts colonial and state officials or the General Court, and second, non-Native peoples on behalf of or that concern Native Americans.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; &lt;br /&gt;
+With a format similar to the NEH funded &lt;a href=&quot;https://dataverse.harvard.edu/dataverse/antislaverypetitionsma&quot;&gt;Antislavery Petitions Massachusetts Dataverse&lt;/a&gt;, of which Dr. Carpenter was also a part, this collection features 644 petitions from predominantly Indigenous townships in Massachusetts, from 1640-1870.  This digitization initiative is in collaboration with the &lt;a href=&quot;https://yipp.yale.edu/&quot;&gt;Yale Papers Project&lt;/a&gt; with the intention to have 4500 items digitized. More importantly, this project was planned in “consultation with and with the support of the Mashpee Wampanoag tribe, the Wampanoag Tribe of Gay Head (Aquinnah), and the Mohegan tribe, including consultation with representatives and governments of other Northeastern tribes and native communities” (&lt;a href=&quot;https://www.radcliffe.harvard.edu/news/in-news/digitizing-native-american-petitions&quot;&gt;Radcliffe Institute&lt;/a&gt;, 2016).&lt;/p&gt;
+
+&lt;p&gt;The interface is simple and clean. It provides neither contextualization of individual documents nor an explanation of the significance of the practice of petitioning in the eighteenth and nineteenth centuries. Nevertheless, the labor of the archivist is on full display. Researchers, educators, and students will find the expansive nature of this collection a welcome addition to the already vast number of nineteenth-century legislative documents available online. However, this collection stands out. Its presence highlights more nuanced perspectives on issues such as Indigenous territorial claims, land rights, religion, the abolition of slavery, and ideas about Indigenous communities in New England, with Native voices, and signatures, at the forefront.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Significance&lt;/strong&gt;&lt;br /&gt;
+ The methodological priorities (tagging, keywords, citation, etc.) place signers and the groups involved in petitioning efforts at the forefront of the site. In both metadata and archivist notes, The Native American Petitions Dataverse highlights Indigenous voices, allowing users to filter petitions by keyword term, publication year, production date (year petition was signed/submitted), and geographic coverage. This reveals opportunities to restructure classic periodization and overemphasized themes in the historiography. More significantly, chosen methods of tagging and consistent categorization increase the visibility of traditionally disenfranchised figures. I am thinking particularly about Native women’s participation in petitioning campaigns and their advocacy about issues related to both individual and tribal rights.&lt;/p&gt;
+
+&lt;p&gt;Take, for example, the 1762 petition of Esther Anthony, a Native woman of color from the tribe of Mashpee, but living in the town of Middleborough, Massachusetts. The &lt;a href=&quot;https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/W0R4MJ&quot;&gt;informational page&lt;/a&gt; includes several identifiers, including the total number of signatures, the extent of legislative action, the number of signatures by women of color, tribal affiliation, and additional archivist notes (i.e., widow, Jeremiah Anthony, sale, lands, payments). At the top of the page is a full citation of the original primary source along with the petition subject (which, in this case is property) and a link to a &lt;a href=&quot;https://iiif.lib.harvard.edu/manifests/view/drs:422116544$140i&quot;&gt;high resolution photograph&lt;/a&gt; of the petition. In the Harvard Library viewer, users can “flip” through the selected petition or browse related petitions (left of the screen) either submitted on the same date, on similar topics, or by the same petitioners as they would be organized in an archival folder. This user-friendly layout provides ample room for researchers interested in larger historical trends, genealogical networks, or public history projects. The latter opens the door to tellings of more nuanced narratives, powerful stories, specific individuals’ names, and the movement of ideas. Dr. Carpenter demonstrates one such application in a data visualization project based on the Massachusetts Antislavery Petitioning Dataverse called &lt;a href=&quot;http://www.yourhumblepetitioners.com/mapview/antislaveryma&quot;&gt;“Your Humble Petitioners.”&lt;/a&gt; This interactive map associates geographic coordinates with the locations inscribed in the metadata of the antislavery petitions. This could very easily be replicated with the Native American petitions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt; &lt;br /&gt;
+The priority to distinguish Native petitions, or petitions about Native issues, commits to a partial restructure the power balance of the colonial archive. However, one is forced to ask whether it goes far enough. Is attribution enough? “Authorship is foundational to the organizational framework because it operates as a core node in the classification of all materials within the modern archive”(Anderson, 230). How is authorship determined? Is that the role of the archivist or the researcher? While this archive does not answer those questions, it does open up a world of research into key figures and names in the history of Indigenous petitioning efforts in the Northeast and is a valuable resource to an interdisciplinary and intertribal pool of scholars. This project shows how prioritizing authorship can make room for Native voices and advocacy in the digital humanities, but leaves unresolved key contextualizing details that would further illuminate the importance of this collection.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Anderson, Jane. “Anxieties of Authorship in the Colonial Archive.” &lt;em&gt;In Media Authorship.&lt;/em&gt; Taylor and Francis, 2013. 229-246. DOI: 10.4324/9780203136010&lt;/p&gt;
+
+&lt;p&gt;Cort, Ben G., and Isabella S. Beroutsos. “Sections.” We The Petitioners: Rewriting the History of Massachusetts’s Native Americans. &lt;em&gt;The Harvard Crimson&lt;/em&gt;, www.thecrimson.com/article/2016/10/6/native-american-petitions/.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dataverse.harvard.edu/dataverse.xhtml?alias=nativeamericanpetitions&quot;&gt;Native American Petitions Dataverse&lt;/a&gt; Accessed November 1, 2018.&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/napetitions-review/&quot;&gt;Authorship and Advocacy: The Native American Petitions Dataverse&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on December 11, 2018.&lt;/p&gt;
   </content>
 </entry>
-{% endfor %}
+
+
+<entry>
+  <title type="html"><![CDATA[Latinxs in Ohio]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/Latinxs-in-Ohio-review/" />
+  <id>http://localhost:4000/blog/Latinxs-in-Ohio-review</id>
+  <published>2018-12-11T00:00:00-05:00</published>
+  <updated>2018-12-11T00:00:00-05:00</updated>
+  <author>
+    <name>Tiffany G</name>
+    <uri>http://localhost:4000</uri>
+    <email>tguridy@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Who are the Latinxs living in Ohio? No need to dive into physical documents at an archival institution; Dr. Elena Foulis, 
+Latinx scholar and senior lecture at Ohio State University (OSU), has recorded and created a digital collection, &lt;a href=&quot;https://cfs.osu.edu/archives/collections/ONLO&quot;&gt;Oral 
+Narratives of Latin@s in Ohio&lt;/a&gt;, in collaboration with the Ohio Hispanic
+Heritage project, an OSU sponsored initiative where one can engage with the stories of Latinxs from Ohio.
+In order to gather the multiple narratives, Dr. Foulis partners with OSU students, project archivist Cassie Patterson,
+and Dr. José Díaz, curator and librarian, to bring about this compilation of lived experiences.&lt;/p&gt;
+
+&lt;p&gt;Dr. Foulis’ goal for this project is to create a resource that preserves the history of Latinxs, at the same time presenting 
+counternarratives to deconstruct the stereotypes of Latinxs in this country and, more specifically, in Ohio. 
+The collection, currently, consists of sixty-seven videos that range in length from twenty minutes to 
+two hours of participants answering various questions, developed by scholars. Participants’ backgrounds are vastly 
+different; some have been in the state of Ohio since the 1940’s and others are recent arrivals. Also, their careers, 
+socioeconomic backgrounds, and reasons for moving to Ohio vary. The interviews will generally have one individual at a time, while 
+others will have multiple participants, including families, groups of friends, and couples. Because of the diversity of the 
+interviewees, their responses provide an intergenerational perspective on life in Ohio, as well as strategies to preserve 
+their culture (Foulis, 2018).&lt;/p&gt;
+
+&lt;p&gt;As I navigated the collection and the videos, my intentions were to review the Oral Narrative collection solely as a scholar, 
+but as a fellow Midwestern Latinx, I felt a strong connection to everyone’s stories. In the late 90s, my family moved from the 
+east coast to a city near the Ohio border. Many of the places mentioned in the videos, I recognized due to 
+my family’s frequent visits to these locations. To say the least, I was thrilled to engage with this material.&lt;/p&gt;
+
+&lt;p&gt;Coming from a multi-ethnic and biracial family, and moving from New York to the Midwest was a challenge for my family. We 
+left everything we were accustomed to, for a place where we did not see or hear people like us, nor did most people understand 
+our backgrounds. Therefore, as I watched the videos, I found myself agreeing with several of the comments made of 
+participants’ lived experiences and values, because to me it represented my family and our reality in the Midwest at a 
+specific moment in time. As a result, I felt connected to all of the individuals and proud to hear their stories.&lt;/p&gt;
+
+&lt;p&gt;Carlos Martinez’s interview describes his reality as a Garifuna who moved from the Bronx to Columbus, Ohio.[3] In his account he shares
+how living in the Midwest, he had to frequntly use English, which impacted his and his younger brother’s Spanish language development.
+Martinez also discusses how as the only Afro-Latinx in his OSU community, he was responsible for representing his culture, 
+and educating others on the existence of Afro-Latinxs and Garifunas. Without Carlos’s narrative, his invisible labor as an Afro-Latinx in an Ohio institution of higher education informing others of his culture would remain untold. His 
+narrative empitomizes the goal Dr. Foulis seeks: to preserve Latinxs’ experiences, culture, and histories.&lt;/p&gt;
+
+&lt;p&gt;She futher emphasizes her goal of centering and celebrating the Latinx culture and language by recording in Spanish
+and English. For example, for heritage speakers like Carlos Martinez, the interview allowed him to proudly converse in the 
+language he stopped utilizing when he moved to Ohio as a young kid. The English intervews allow participates to also 
+share their unique Latinx expereinces, such as Candelaria Mota, who shared her encounters with marginalization in Ohio[4].
+This collection is an authentic example of how the archive can bring to the forefront the voices of those usually 
+excluded and marginalized to support their efforts to preserve their stories.&lt;/p&gt;
+
+&lt;p&gt;Returning to my reactions as I read, I couldn’t help but question my excitement. Why was I drawn to these stories, even 
+though I frequently and intentionally visit and engage with Latinxs spaces? I found the answer to my question in the 
+concepts of symbolic annihilation and representational belonging described by Caswell et al. in “To Suddenly Find Yourself
+Existing.” Symbolic annihilation means “to be an eternal outsider whose very existence is presumed 
+an impossibility” (Caswell et al. 58), and representational belonging “describes the affective responses community members
+have to seeing their communities presented with complexity and nuance” (Caswell et al. 75). This resonated with me 
+because I never realized that the stories of my small, local, marginalized community could be preserved, valued, and
+shared for others to learn from our experiences and culture.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, I am left pondering the implications of this collection being held and supported by an institution of 
+higher education. While reviewing the site and the recordings, I was thrown off by the use of university propaganda as the background display. Was OSU trying to remind the 
+viewer that they funded this project in order to engender positive perceptions of OSU? Equally important is the use of written 
+English language to describe the project. Why did Dr. Foulis and her team not include a Spanish version, for predominantly 
+Spanish speakers to read? With this in mind, I ask, could this project be handed to community leaders to flourish into an 
+independent community archive, or would it be possible for community members to become collaborators of the project? 
+“Archives and archivists should empower rather than wield power” (Kelleher 21). Even though this collection can be a 
+source of empowerment, there’s opportunity to transfer power to the community.&lt;/p&gt;
+
+&lt;p&gt;Dr. Foulis and her team are centralizing and conserving the oral history of Latinxs in Ohio. Their efforts are a 
+necessary task that is part of a bigger movement to represent marginalized groups in spaces where they have been excluded in the 
+past.&lt;/p&gt;
+
+&lt;h2 id=&quot;works-cited&quot;&gt;Works Cited&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Caswell, Michelle, Marika Cifor, and Mario H. Ramirez. “To Suddenly Discover Yourself Existing: Uncovering the Impact of Community Archives.”
+&lt;em&gt;The American Archivist&lt;/em&gt;, vol. 79, no. 1, 2016, pp. 56-81.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Foulis, Elena. “Oral Narratives of Latin@s in Ohio.” &lt;em&gt;OSU Folklore Archives.&lt;/em&gt; Jan. 2018. (https://cfs.osu.edu/archives/collections/ONLO). 
+Accessed 5 November 2018.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Carlos Martinez. YouTube, uploaded by Elena Foulis, 18 Jan 2015, https://youtu.be/y7J6fEbLljM.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“Oral Narratives of Latin@s in Ohio Canderlaria Mota 2018.” YouTube, uploaded by Elena Foulis, 11 May 2018,
+https://youtu.be/TeLZ4yWgqC4.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/Latinxs-in-Ohio-review/&quot;&gt;Latinxs in Ohio&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on December 11, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Proyecto 30másChile]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/30masChile/" />
+  <id>http://localhost:4000/blog/30masChile</id>
+  <published>2018-11-20T00:00:00-05:00</published>
+  <updated>2018-11-20T00:00:00-05:00</updated>
+  <author>
+    <name>Nicole Larrondo</name>
+    <uri>http://localhost:4000</uri>
+    <email>nicolelarrondo@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;a-30-años-del-plebiscito-30máschile&quot;&gt;A 30 años del Plebiscito: 30MásChile&lt;/h1&gt;
+
+&lt;p&gt;En Chile de 1988 se abrió una pequeña ventana de esperanza al presentarse la oportunidad de sacar a Augusto Pinochet del poder, y así terminar con la dictadura impuesta desde el año 1973. Tal cual como lo narra Pablo Larraín en su película &lt;a href=&quot;https://www.youtube.com/watch?v=DJ1v55-ocIo&quot; title=&quot;Youtube - No Trailer&quot;&gt;No (2012)&lt;/a&gt;, esta ventana de esperanza terminaría convirtiéndose en una gesta épica, haciendo lo que parecía inimaginable en realidad. Desde ya con el cambio de siglo, y con mayor fuerza desde el Bicentenario de Chile en el 2010, los esfuerzos mediáticos por mostrar la historia y memoria del país se volvieron recurrentes en nuestras pantallas. Enmarcado en esta ola por recordar, y específicamente para conmemorar los 30 años del referendo, es que aparece &lt;em&gt;30másChile&lt;/em&gt;, un proyecto cuatriplataforma (&lt;a href=&quot;https://30mas.cl/&quot; title=&quot;30mas.cl&quot;&gt;sitio web&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/30maschile&quot; title=&quot;Twitter @30MasChile&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://www.instagram.com/30maschile/&quot; title=&quot;Instagram @30MasChile&quot;&gt;Instagram&lt;/a&gt; y &lt;a href=&quot;https://www.facebook.com/30MasChile/&quot; title=&quot;Facebook @30MasChile&quot;&gt;Facebook&lt;/a&gt;) que crea una cronología multimedial de los sucesos acontecidos antes y después del plebiscito del 5 de Octubre de 1988, mostrados en “tiempo real”, con el objetivo de dar a conocer la historia de las chilenas y chilenos que participaron del proceso.&lt;/p&gt;
+
+&lt;p&gt;Este proyecto fue creado y financiado por la &lt;a href=&quot;http://www.fdd.cl/&quot; title=&quot;FDD.CL&quot;&gt;Fundación Democracia y Desarrollo (FDD)&lt;/a&gt;, y entre los colaboradores se encuentran instituciones culturales públicas y privadas tales como la Biblioteca Nacional de Chile, el Archivo Nacional, el Museo de la Memoria y los Derechos Humanos, y medios periodísticos como Televisión Nacional de Chile y El Quinto Poder. Asimismo cuenta con la participación de destacados políticos de centro izquierda como Eugenio Tironi, quien fuera uno de los ideólogos del No, y el ex Presidente Ricardo Lagos, quien además de haber sido una figura clave en la rearticulación de la izquierda en Chile a finales de los 80’s y en el período de transición, también es el organizador de FDD.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;30másChile&lt;/em&gt; nos propone un set de preguntas al momento de abrir la página web. Primero, ¿Cuándo un archivo se vuelve tal? Al navegar por el sitio, nos damos cuenta que la forma de articulación de los documentos expuestos es cronológica enmarcándose entre el 30 de Agosto de 1988 hasta el 7 de Octubre del mismo año. Durante esos 37 días del presente año, se subieron noticias y archivos en “tiempo real”, como si las noticias hubiesen pasado en ese mismo momento, pero compartidas por redes sociales, lo que le agrega un factor nostálgico al proyecto. Allí, los documentos que se nos presentan son variados: recortes de diarios, fotografías, videos y cómics, por nombrar algunos. También en un esfuerzo por enmarcar la historia del plebiscito en un contexto más global, se muestran documentos del acontecer político chileno de aquella época entremezclados con otras noticias nacionales e internacionales. Por lo tanto, &lt;em&gt;30másChile&lt;/em&gt; sí cumple con lo que un archivo clásico requiere tener: fuentes primarias. Pero como explicaré más adelante, en varios casos carece de metadata necesaria para guiar al investigador en su búsqueda precisa de archivos y documentos.&lt;/p&gt;
+
+&lt;p&gt;Dentro de la lógica de participación ciudadana, los creadores de &lt;em&gt;30másChile&lt;/em&gt; invitan a quienes vivieron el plebiscito que compartan su testimonio. En &lt;a href=&quot;https://30mas.cl/acerca&quot; title=&quot;https://30mas.cl/acerca&quot;&gt;acerca del proyecto&lt;/a&gt;, se explicita que el objetivo de la creación de la página web, más allá de volverse un recurso para investigadores, busca “convertir la memoria en futuro y recuperar la confianza que tuvimos todos en un proyecto colectivo.” Para ello, se hace un llamado bien explícito a quienes navegan el sitio web, Instagram o Twitter: “¿Dónde estabas ese 5 de octubre? ¿Acompañaste a tus padres o abuelos a votar? ¿Qué hiciste durante los días de campaña previos al plebiscito?”. Con estas preguntas se buscaban aportes de testimonios de los usuarios en formato de fotografía, video, texto, audio o mixto. 
+Lo interesante del llamado abierto a participar mediante la entrega de un testimonio, es la voluntad de los creadores de &lt;em&gt;30másChile&lt;/em&gt; tienen para compartir la autoridad con los usuarios en la producción de este proyecto, validando las múltiples subjetividades que componen un proceso sociopolítico tan complejo como fue el plebiscito. Dentro de la lógica de las humanidades públicas, Sherry Arnstein en su artículo &lt;a href=&quot;http://www.participatorymethods.org/sites/participatorymethods.org/files/Arnstein%20ladder%201969.pdf&quot; title=&quot;Arnstein ladder 1969.pdf&quot;&gt;A Ladder Of Citizen Participation (1969)&lt;/a&gt; explica que la participación ciudadana “(…) es un término categórico para el empoderamiento ciudadano. Es la redistribución del poder, lo cual permite a ciudadanos sin poder económico — quienes están actualmente excluidos de los procesos politicos y económicos — a estar deliberadamente incluidos en el futuro.” (216)[1]. De esta forma, no es lo mismo estar informado sobre un tema a tener el control de la situación. En este caso, por medio del testimonio que se entrega, el usuario se vuelve en un contribuidor voluntario en la creación de la memoria de este este hito que cambió la historia del país. Hacer este llamado público me parece una idea muy valorable, pues las instituciones en donde se acuñan conocimiento, pocas veces dejan espacios a que personas externas puedan compartir el poder de decidir qué es importante (o no) preservar, y cuál será el relato que se exhibirá.
+Por otro lado, la contribución del testimonio está acotado a ciertas reglas de envío de material que están explícitas en la pestaña &lt;a href=&quot;https://30mas.cl/colabora&quot; title=&quot;https://30mas.cl/colabora&quot;&gt;Colabora&lt;/a&gt;, lo restringe las libertades de quien quiere compartir por cuestiones técnicas (tener equipo adecuado, cumplir con el tiempo o extensión de palabras, etc.) o conceptuales (¿cómo se puede ser objetivo si se entra al terreno de la memoria?).&lt;/p&gt;
+
+&lt;p&gt;Como usuaria del sitio, siento que quedan otros puntos que resolver, especialmente con la forma en que se muestran los documentos multimedia y su falta de metadata. Por ejemplo, muchas de las fotografías y videos carecen de fechas, lugares, nombres de periódicos y otros recursos de donde se obtuvo la información, y en su lugar solo se encuentra una descripción general del archivo que se está viendo. Por lo tanto, si se quisiera profundizar en el tema o citar la información encontrada, sería imposible. No estoy segura si los creadores de &lt;em&gt;30másChile&lt;/em&gt; deliberadamente omitieron la información o fue el resultado historiográfico a medias por parte del equipo de investigación, pero definitivamente este punto nos hace pensar si el sitio fue o no fue pensado como recurso pedagógico en su totalidad.&lt;/p&gt;
+
+&lt;p&gt;Por otro lado, el tema de la accesibilidad se hace evidente nuevamente en temas de archivos digitales y sobre todo en aquellos que trabajan con comunidades y/o su audiencia. Michel-Rolph Trouillot en su libro &lt;em&gt;Silencing the Past&lt;/em&gt;, nos recuerda que “La creación de archivos involucra numerosas operaciones selectivas: la selección de productores, la selección de evidencia, la selección de temas, la selección de procedimientos— lo que significa, en el mejor de los casos, la clasificación diferencial y, en el peor, la exclusión de algunos productores, de algún tipo de evidencia, de algunos temas y de algunos procedimientos. El poder entra aquí al mismo tiempo de forma explicita y subrepticiamente.” (53) [2]. Entonces, ¿quién puede formar parte de la memoria del Plebiscito del 88? Ciertamente las personas que tienen la tecnología para poder grabar, escanear, escribir, y finalmente, enviar su aporte. Personas sin acceso a computadores, tablets y/o celulares, así como a conexión a internet quedan fuera como potenciales contribuidores. Probablemente por eso sea que &lt;a href=&quot;https://30mas.cl/acerca&quot; title=&quot;https://30mas.cl/acerca&quot;&gt;el llamado a los usuarios para ser parte del proyecto sea explícitamente a generaciones más jóvenes&lt;/a&gt; (¿Acompañaste a tus padres o abuelos a votar?). Con esto no solo se excluyen los relatos de esas personas mayores que no tienen vínculos con la internet (directamente o mediante familiares y amistades), sino que también se excluyen las voces de quienes no vivieron el proceso o no tienen recuerdos directos de ello. Este es probablemente uno de las mayores falencias de “hacer memoria” pasada sobre un día, y es que se dejan de lado a quienes vinieron después. Dentro de este marco, la &lt;a href=&quot;https://www.postmemory.net/&quot; title=&quot;https://www.postmemory.net/&quot;&gt;postmemoria&lt;/a&gt;, a mi juicio, es también tan necesaria para poder componer un relato país inclusivo y democrático.&lt;/p&gt;
+
+&lt;p&gt;A modo de cierre, creo que proyectos como &lt;em&gt;30másChile&lt;/em&gt; son valiosos para la reactivación de la memoria colectiva sobre hechos tan relevantes como lo fue el Plebiscito de 1988 para el retorno a la democracia en Chile. Ponen en valor documentos que comúnmente no se encontrarían en los archivos más tradicionales (tales como testimonios, video clips, comerciales, cápsulas informativas de televisión, historias de farándula), así como también el formato en el que es presentado y cómo la información fue compartida con los usuarios se exhibe como una fórmula historiográfica y archivística refrescante. Si bien esta metodología no es del todo novedosa, es destacable ya que logra tener un mayor alcance de usuarios, a través de procedimientos que les son familiares para el consumo de información: usando medios informativos digitales. El formato de “tiempo real” para su difusión, así como la diversidad de documentos que contiene &lt;em&gt;30másChile&lt;/em&gt; se vuelve significativo desde el ámbito de los afectos pues incluye eventos íntimos y cotidianos, y no solo documentos judiciales, periodísticos o clericales, entre otros.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Notas al pie&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;[1] “(…) is a categorical term for citizen power. It is the redistribution of power that enables the have-not citizens, presently excluded from the political and economic processes, to be deliberately included in the future.” (Arnstein, 216). Texto original. La cita en el cuerpo del texto fue traduccido por la autora.&lt;/p&gt;
+
+&lt;p&gt;[2] “The making of archives involves a number of selective operations: selection of producers, selection of evidence, selection of themes, selection of procedures—which means, at best the differential ranking and, at worst, the exclusion of some producers, some evidence, some themes, some procedures. Power enters here both obviously and surreptitiously.” (Trouillot, 53). Texto original. La cita en el cuerpo del texto fue traduccido por la autora.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Bibliografía&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;30+&lt;/td&gt;
+          &lt;td&gt;Con futuro, con todos. (2018). Retrieved from https://30mas.cl/&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Arnstein, S. (1969). A Ladder Of Citizen Participation. Journal Of The American Institute Of Planners, 35(4), 216-224.&lt;/li&gt;
+  &lt;li&gt;Fundación Democracia y Desarrollo. (2018). Retrieved from http://www.fdd.cl/&lt;/li&gt;
+  &lt;li&gt;Hirsch, M. POSTMEMORY.net. Retrieved from http://www.postmemory.net/&lt;/li&gt;
+  &lt;li&gt;Larraín, P. (2012). No [DVD]. Chile.&lt;/li&gt;
+  &lt;li&gt;Trouillot, M. (2015). Silencing the past power and the production of history. Boston: Beacon Press.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/30masChile/&quot;&gt;Proyecto 30másChile&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on November 20, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Reseña del archivo digital Archivo Mapuche Warria Mew.]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/Rese%C3%B1a-Digital/" />
+  <id>http://localhost:4000/blog/Reseña-Digital</id>
+  <published>2018-11-19T00:00:00-05:00</published>
+  <updated>2018-11-19T00:00:00-05:00</updated>
+  <author>
+    <name>Pablo Millalen</name>
+    <uri>http://localhost:4000</uri>
+    <email>pmillalen@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Reseña del archivo digital “Archivo Mapuche Warria Mew. Waria ñi tukulpan dungu/ Ampliando los horizontes de la memoria.”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Archivo Mapuche Warria Mew. Waria ñi tukulpan dungu/ Ampliando los horizontes de la memoria.&lt;/em&gt; Proyecto Financiado por el Fondo Nacional de Desarrollo Cultural y las Artes.    Web. 06 de octubre de 2018 &lt;a href=&quot;http://www.mapuchewariamew.cl&quot;&gt;Mapuche Waria Mew&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Los investigadores del Pueblo Mapuche en Chile, Claudio Alvarado Lincopi y  Enrique Antileo Baeza, integrantes del Centro de Estudios e Investigación Comunidad de Historia Mapuche (CHM) gestionaron el proyecto denominado &lt;em&gt;“Santiago Waria Mew. Memoria y fotografía de la migración mapuche”.&lt;/em&gt; El proyecto fue financiado con el apoyo del Fondo Nacional de Desarrollo Cultural y las Artes (FONDART), Línea Desarrollo de las Culturas Indígenas, el cual consiste en un programa del Estado para apoyar la promoción del desarrollo cultural, artístisco y patrimonial en Chile. El proyecto se constituye a partir del libro &lt;em&gt;“Santiago Waria Mew. Memoria y fotografía de la migración mapuche”&lt;/em&gt; editado en los años 2016 y 2017 (son dos ediciones) respectivamente, y también del archivo digital &lt;a href=&quot;http://www.mapuchewariamew.cl&quot;&gt;Mapuche Waria Mew&lt;/a&gt;. De acuerdo a los autores Antileo &amp;amp; Alvarado (2017) el proyecto tiene como objetivo “&lt;em&gt;narrar y reflexionar sobre la migración mapuche desde los diversos archivos que nos han legado las familias mapuche: fotografías, cartas, diarios, boletines, dibujos, etc.”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ahora bien, el archivo digital denominado &lt;em&gt;“Archivo Mapuche Warria Mew. Waria ñi tukulpan zugu/ Ampliando los Horizontes de la Memoria”&lt;/em&gt; corresponde a las historias de 12 familias que emigraron de distintas identidades territoriales del Wallmapü  hacia la Capital del Reyno o Santiago de Chile. El archivo contiene materiales documentales asociado a periódicos, boletines, cartas, testimonios e hitos relevantes, grabaciones, y también fotografías de las familias mapuche. Se detalla copias de organizaciones como la &lt;em&gt;“Sociedad Araucana Galvarino”&lt;/em&gt; formada en 1932, y también se aborda con rigurosidad las historias familiares a partir de las vivencias en el campo, la migración a Santiago, las historias de amor, el trabajo doméstico, penas y alegrías, oficios adquiridos a través de la práctica, el fortalecimiento identitario, etc.&lt;/p&gt;
+
+&lt;p&gt;El &lt;em&gt;“Archivo Mapuche Warria Mew. Waria ñi tukulpan zugu/ Ampliando los Horizontes de la Memoria”&lt;/em&gt; es un interesante intento para avanzar en el desmantelamiento de un eje de las historias mapuche.  Es un aporte relevante, provocador y a la vez plantea retos. Es relevante porque los investigadores llevan a la práctica la investigación colaborativa la cual viene a contrarrestar la corriente de extractivismo epistémico desarrollado por la academia hegemónica- colonial, canalizada por múltiples investigaciones indigenistas criollos o  &lt;em&gt;“expertise”&lt;/em&gt; sobre lo mapuche y/o indígena en tanto “se realizan muchos estudios sobre la sociedad mapuche, pero sin la sociedad mapuche”(Huinca 2013, 112). La investigación se desarrolla en un  contexto donde los investigadores pertenecen al Pueblo Mapuche utilizando la web para enaltecer historias del cuál también forman parte. Es relevante porque en el proceso de recuperación de la memoria histórica a través del archivo digital, los investigadores utilizan y reivindican la practica propia mapuche de interacción con el otro, denominada &lt;em&gt;nütram&lt;/em&gt;, que consiste en el ejercicio de relatos orales por parte del Gñen rüka (dueñx de casa) hacia quienes se interesan por un asunto determinado.&lt;/p&gt;
+
+&lt;p&gt;Es provocador porque rompe con los olvidos dirigidos y recuerdos silenciados, causados por instituciones de poder asociadas a la dominación colonial por parte del Estado Chileno en la segunda mitad del siglo 19. Sin embargo, “&lt;em&gt;los archivos pueden liberar, pero también pueden encerrar, silenciar o decepcionar”&lt;/em&gt; 1 (Weld 2014, 237), para este caso en particular el rol del archivo ha sido liberar, en tanto hace visible documentación relevante para el rescate de la memoria a través de las historias de vidas de familias mapuche. Por lo tanto, la apertura de las 12 familias mapuche más allá de conocer las experiencias, cumple un rol de empoderamiento a nivel individual y a nivel colectivo, principalmente en las nuevas generaciones, dado que son insumos claves para comprender los fenómenos de migración y las condiciones sociales y políticas en un contexto de despojo forzado.&lt;/p&gt;
+
+&lt;p&gt;Constituye un reto para las futuras investigaciones respecto de Pueblos Indígenas en Chile y el Pueblo Mapuche en particular, porque a partir del archivo digital es necesario compatibilizar la recuperación de archivos y tecnología, en tanto estos avanzan en paralelo. La evidencia a partir del “&lt;em&gt;Archivo Mapuche Warria Mew. Waria ñi tukulpan zugu/ Ampliando los Horizontes de la Memoria”&lt;/em&gt; así lo demuestra. Otro reto, involucra a los integrantes de pueblos indígenas para reflexionar más allá de las reivindicaciones por los derechos territoriales, sino también el patrimonio cultural e intelectual.&lt;/p&gt;
+
+&lt;p&gt;Finalmente “&lt;em&gt;Mapuche Warria Mew. Waria ñi tukulpan zugu/ Ampliando los Horizontes de la Memoria”&lt;/em&gt; es uno de los escasos archivos digitales vinculados a las historias y memorias mapuche realizados por investigadores pertenecientes al mismo pueblo. Es un aporte no solo para los Pueblos Indígenas, sino también para la sociedad en general. Es un material de fácil acceso para instruirse sobre una de las múltiples realidades del Pueblo Mapuche en la actualidad. Por lo tanto, puede ser el inicio para comenzar a desmantelar otros olvidos dirigidos y recuerdos silenciados.&lt;/p&gt;
+
+&lt;p&gt;1 &lt;em&gt;“Archives can liberate, but they can also enclose, silence, or disappoint.”&lt;/em&gt; Frase original, la traducción es del autor.&lt;/p&gt;
+
+&lt;p&gt;Palabras en Mapuzugün:
+Mapuzugün: Idioma del Pueblo Mapuche
+Wallmapü: Corresponde al territorio histórico del Pueblo Mapuche. Se compone del Ngülu Mapü (Sur de Chile) y Puel Mapü (Sur de Argentina).
+Waria: Ciudad
+Gñen rüka: Dueñx de casa 
+Tukulpan zugü: Historias mapuche&lt;/p&gt;
+
+&lt;p&gt;Referencias&lt;/p&gt;
+
+&lt;p&gt;Antileo, Enrique &amp;amp; Claudio Alvarado. &lt;em&gt;Fütra Waria o Capital del Reyno. Imágenes, escrituras e historias mapuche en la gran ciudad 1927-1992.&lt;/em&gt; Santiago: Ediciones Comunidad de Historia Mapuche, 2018. 1era edición.&lt;/p&gt;
+
+&lt;p&gt;Huinca, H.  “Los mapuche del Jardin de Aclimatación de París en 1883: objetos de la ciencia colonial y políticas de investigación contemporanéas.” Taiñ fijke xipa rakizuameluwun: Historia, colonialismo y resistencia desde el país Mapuche. Editado por Héctor Nahuelpan y otros. Temuco: Ediciones Comunidad de Historia Mapuche, 2013. 2da edición. 89-117&lt;/p&gt;
+
+&lt;p&gt;Weld, Kirsten. “Paper Cadavers: The Archives of Dictatorship in Guatemala.”
+Duke University Press, 2014. 352.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/Rese%C3%B1a-Digital/&quot;&gt;Reseña del archivo digital Archivo Mapuche Warria Mew.&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on November 19, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Los Archivos de Gabriel García Márquez: una Relación Polémica.]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/ReviewGarc%C3%ADaM%C3%A1rqu/" />
+  <id>http://localhost:4000/blog/ReviewGarcíaMárqu</id>
+  <published>2018-11-07T00:00:00-05:00</published>
+  <updated>2018-11-07T00:00:00-05:00</updated>
+  <author>
+    <name>Yenibel Ruiz</name>
+    <uri>http://localhost:4000</uri>
+    <email>yenibel@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Gabriel García Márquez.  Harry Ransom Center.  The University of Texas. Web. 16 de Octubre 2018.   &lt;a href=&quot;https://hrc.contentdm.oclc.org/digital/collection/p15878coll51/&quot;&gt;https://hrc.contentdm.oclc.org/digital/collection/p15878coll51/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Así de extraño como el nacimiento del último de los Buendía que nació con una cola de cerdo en la famosa novela &lt;em&gt;100 años de Soledad&lt;/em&gt; del colombiano Gabriel García Márquez, es extraño para muchos de sus paisanos que el archivo privado de este escritor, premio Nobel de literatura 1982, repose en el &lt;a href=&quot;http://www.hrc.utexas.edu/&quot;&gt;Centro de Archivos Harry Ransom Center&lt;/a&gt; en la Universidad de Texas en Austin, en los Estados Unidos. País que vetó por muchos años al escritor por la relación de éste con Fidel Castro y por ser catalogado por muchos como comunista.&lt;/p&gt;
+
+&lt;p&gt;Pero por qué la familia del escritor querría que sus archivos, los originales de sus novelas más famosas, sus notas, sus memorias, sus fotos y en fin lo que condensa parte su vida privada y que lo hizo famoso públicamente como escritor estuviese tan lejos de su macondiana tierra?&lt;/p&gt;
+
+&lt;p&gt;Uno de sus hijos, Rodrigo García, declaró en una ocasión, que la familia, madre e hijos siempre sintieron el compromiso de hacer que el archivo de su padre llegará a la mayor audiencia posible. En este sentido, el proyecto de digitalizar el archivo por parte de la reconocida institución Harry Ransom Center parecía lo más cercano a este deseo.&lt;/p&gt;
+
+&lt;p&gt;El archivo digitalizado de Gabriel García Márquez abarca más de 27.000 imágenes entre sus documentos y fotografías. Esta colección accesible a todo público mediante la web incluye manuscritos originales de muchas de sus obras como &lt;em&gt;100 años de Soledad&lt;/em&gt; y &lt;em&gt;El Coronel No tiene quién le Escriba&lt;/em&gt;. También una parte de sus memorias escritas en la obra &lt;em&gt;En Agosto nos Vemos&lt;/em&gt;, que el escritor nunca consideró lista para publicar. El resto de esta obra puede consultarse en sala.&lt;/p&gt;
+
+&lt;p&gt;Las fotografías muestran las relaciones del escritor, desde sus encuentros con amigos, también famosos, como Fidel Castro hasta sus relaciones en la intimidad de su familia, como por ejemplo fotos con sus abuelos.&lt;/p&gt;
+
+&lt;p&gt;También en la colección digital se puede encontrar una carpeta de recortes de prensa y revistas relacionado con sus obras más famosas.&lt;/p&gt;
+
+&lt;p&gt;Este archivo digitalizado llamado &lt;em&gt;Sharing ‘Gabo’ with the World: Building the Gabriel&lt;/em&gt; –Gabo con el mundo: Construyendo a Gabriel– se puede consultar en inglés y español. Además cuenta con un recurso tecnológico llamado &lt;em&gt;“Mirador”&lt;/em&gt; que permite la visualización simultánea de imágenes pudiendo comparar al mismo tiempo, por ejemplo, tres imágenes de diferentes borradores de alguna de sus novelas en la misma página.&lt;/p&gt;
+
+&lt;p&gt;Debido a esta tecnología, el ususario puede ver, por ejemplo, como García Márquez va re-versionando su propio trabajo hasta el producto final y descubrir cómo lo editaba, por ejemplo.&lt;/p&gt;
+
+&lt;p&gt;Adicionalmente, &lt;a href=&quot;https://norman.hrc.utexas.edu/mirador/p15878coll73/3649&quot;&gt;&lt;em&gt;“Mirador”&lt;/em&gt;&lt;/a&gt; funciona gracias a una interface que permite que estas imágenes del archivo estén disponibles en una red internacional de colecciones digitales.&lt;/p&gt;
+
+&lt;p&gt;Es decir que no sólo el mundo tiene acceso al archivo sino que esta plataforma con estas herramientas le permite al usuario revisar, comparar, visualizar y navegar el archivo de una manera particular que puede ser útil para muchas personas.&lt;/p&gt;
+
+&lt;p&gt;Acceder a la colección digital de García Márquez desde cualquier ordenador y desde cualquier parte del mundo es permitirnos y que nos permitan, gracias a la publicación y digitalización, entrar en la casa del premio Nobel y conectarnos con su intimidad.&lt;/p&gt;
+
+&lt;p&gt;Y esta conexión significa poder conocer un archivo que muestra sin duda una “verdad” sobre la vida del escritor que no se conocía públicamente. Al revisarlo o estudiarlo, por ejemplo, se pueden romper con los mitos sobre su historia de vida. A través de los archivos se puede escudriñar en sus hábitos de escritura. Las autocorrecciones de sus novelas, sus comunicaciones,  sus círculos de amigos íntimos, su familia, su obsesión por perfeccionar una y otra vez una frase.&lt;/p&gt;
+
+&lt;p&gt;Gracias a que está en internet, la factibilidad de acceder a la obra del escritor y su legado es mucho mayor. Se abre, entonces,un nuevo mundo de posibilidades de estudio sobre él,sobre el país donde vivió, la cultura que lo rodeaba, así como sus afectos y el origen de su “musa” (si es que tuvo alguna). Así como el origen de sus obras. Todo lo imaginable e inimaginable que un archivo como este puede ofrecer esta disponible y accesible.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, no se trata nada más sobre lo que el archivo, una vez digitalizado, pueda ofrecer. El archivo va mucho más allá.&lt;/p&gt;
+
+&lt;p&gt;Y va más allá porque cuando se trata de un archivo como este, de un personaje tan famoso como un premio Nobel, también se toma en cuenta en el análisi del archivo el significado del personaje y la cultura del país de donde proviene (Colombia) y de la otra cultura del país de donde vivió (México), entre otros elementos.&lt;/p&gt;
+
+&lt;p&gt;Tal como una agencia rizomática, como dirían Gilles Deleuze y Félix Guattari, en su libro &lt;em&gt;Mil Mesetas&lt;/em&gt; , el archivo al ser vendido, trasladado y digitalizado, entra en una serie de relaciones y conexiones que generan a su vez diálogos entre el archivo como unidad en sí misma y su relación con su contenido, así como su relación con el que lo usa y relaciones de espacio.&lt;/p&gt;
+
+&lt;p&gt;Es así, por ejemplo, que la polémica generada por el hecho de que la colección privada de un escritor latinoamericano se encuentre en otro país lejos de la tierra donde él vivió tenga sentido. La relación de este archivo con los colombianos tiene un asidero, pues García Márquez era colombiano. Por lo tanto hay una conexión que no es desestimable.&lt;/p&gt;
+
+&lt;p&gt;Entonces, más allá de una simple recolección de papeles depositados en 24 cajas, el archivo como bien lo describen los autores Carlos Acuña y Javier Villa Flores en el texto “Los archivos y la construcción de la verdad histórica en América Latina” son:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“Lejos de ser depósitos imparciales, los archivos operan a partir de relaciones de autoridad y fuerza que determinan lo que es “archivable” y lo que es “accesible”. Su propia creación, contenido y funcionamiento son el resultado de acciones deliberadas de inclusión y exclusión tendientes a “organizar”, “ordenar” y, por lo mismo, construir” el pasado.”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Este archivo significa un pasado, un presente y un futuro.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-polémica&quot;&gt;&lt;strong&gt;La polémica&lt;/strong&gt;:&lt;/h2&gt;
+
+&lt;p&gt;Cuando el escritor murió en el 2014 y se dió a conocer la noticia del destino de sus archivos, muchas fueron las reacciones a favor y en contra de la decisión. La idea de que el escritor les pertenecía a los colombianos se diluyó al vender su memorabilia a un centro en los Estados Unidos. Yo diría que no sólo con esta decisión García Márquez dejó de ser de los colombianos, sino que una vez que se digitalizó el archivo, perdió la idea de ser propiedad de alguien, ya sea de los colombianos o de su familia. Es ahora propiedad del mundo, del mundo del internet.&lt;/p&gt;
+
+&lt;p&gt;Como consecuencia, el archivo se convirtió en algo etéreo porque está en el aire conectándose consigo mismo y con el mundo  y al mismo tiempo en algo concreto porque lo podemos ver, leer, analizar, usar y hasta escuchar.&lt;/p&gt;
+
+&lt;p&gt;El archivo dejó de tener propiedad aunque legalmente la tenga. La autoridad del archivo fue trasladada a otro sujeto y a otro espacio y a muchos sujetos y a muchos espacios.&lt;/p&gt;
+
+&lt;h3 id=&quot;las-preguntas-sin-respuesta&quot;&gt;&lt;strong&gt;Las preguntas sin respuesta:&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Cuando se discutió este tema sobre el destino de los archivos del premio Nobel muchas preguntas salieron al debate público, especialmente en Colombia: ¿Hizo el gobierno colombiano lo necesario para quedarse con los archivos?  ¿Podría invertir el gobierno o alguien en Colombia 2,2 millones de dólares para la adquisición de este material? ¿Por qué el gobierno colombiano permitió que se llevaran esos archivos?  ¿Si estuviese en Colombia se hubiesen preservado de la misma forma? ¿Se hubiesen digitalizado los archivos?&lt;/p&gt;
+
+&lt;p&gt;Ninguna de estas preguntas tendrán respuestas, pero sí nos permiten la reflexión sobre lo que puede significar un archivo, lo que significa digitalizarlo, el significado de la accesibilidad del mismo y lo que además representa migrar los documentos a otro país , es decir, “desarraigarlo” de su entorno.&lt;/p&gt;
+
+&lt;p&gt;También nos hace preguntarnos quién era realmente Gabriel García Márquez y por qué es tan importante no sólo poseer sus archivos sino digitalizarlos y hacerlo accesibles al mundo. ¿A quién le interesa? ¿Cuál es su contribución para el mundo? ¿Qué intereses políticos están detrás de los documentos y detrás del debate surgido a partir de la decisión de la familia?&lt;/p&gt;
+
+&lt;p&gt;El archivo fue adquirido por el Harry Ransom Center, institución que también posee y preserva archivos de otros importantes escritores como James Joyce, Ernest Hemingway, y Jorge Luis Borges entre otros. La institución adquirió los archivos de García Márquez en noviembre del 2014 y estuvo disponible al público general en diciembre del 2017.
+El proceso de digitalización duró 18 meses y estuvo a cargo de bibliotecarios, archivistas, restauradores, personal de informática y estudiantes.&lt;/p&gt;
+
+&lt;p&gt;Ahora estos archivos están en Texas. Y yo me hago mas preguntas: ¿A quién le interesa en Texas consultar estos archivos?  Y en otro orden de ideas: ¿No es acaso un acto de colonización el tomar los archivos de la cultura latinoamericana a suelo no latinoamericano? Eso es otra reflexión que concierne a otro artículo. Otra reflexión  que los simples papeles de un escritor latinoamericano como García Márquez nos seguirá ofreciendo. Lo que está más allá del archivo de García Márquez es sin duda una relación polémica.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/ReviewGarc%C3%ADaM%C3%A1rqu/&quot;&gt;Los Archivos de Gabriel García Márquez: una Relación Polémica.&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on November 07, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review of the Ticha Project]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/ticha-review/" />
+  <id>http://localhost:4000/blog/ticha-review</id>
+  <published>2018-11-03T00:00:00-04:00</published>
+  <updated>2018-11-03T00:00:00-04:00</updated>
+  <author>
+    <name>Jessica L Sánchez Flores</name>
+    <uri>http://localhost:4000</uri>
+    <email>jlsanchez@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Lillehaugen, Brook Danielle, Broadwell, George Aaron, Michel R. Oudijk, &amp;amp; Laurie Allen. 2015. 
+&lt;br /&gt;&lt;em&gt;Ticha: a digital text explorer for Colonial Zapotec&lt;/em&gt;. First edition.(http://ticha.haverford.edu/)&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Reviewed by Jessica Sánchez Flores&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ticha, the name of the digital platform under review here, means “language” in Zapotec, an indigenous language spoken in Southern Mexico. Ticha is an ongoing project led by an interdisciplinary team of scholars from different fields in the United States and Mexico and is supported by Haverford College Libraries: Brook D. Lillehaugen, Linguist-Assistant Professor, at Haverford College &lt;a href=&quot;http://brooklillehaugen.weebly.com/&quot;&gt;webpage&lt;/a&gt;; George A. Broadwell, Linguist, Professor at University at Albany (SUNY) &lt;a href=&quot;https://www.albany.edu/anthro/broadwell.php&quot;&gt;webpage&lt;/a&gt;; Michel R. Oudijk, Ethnohistorian, Universidad Nacional Autónoma de México &lt;a href=&quot;https://mroudyk.weebly.com/index.html&quot;&gt;webpage&lt;/a&gt;; and Laurie Allen, Coordinator for Digital Scholarship and Services at Magill Library, Haverford College.&lt;/p&gt;
+
+&lt;p&gt;The digital platform itself is organized into three main areas: &lt;a href=&quot;https://ticha.haverford.edu/en/about/&quot;&gt;About&lt;/a&gt;, &lt;a href=&quot;https://ticha.haverford.edu/en/context/&quot;&gt;Colonial Zapotec&lt;/a&gt;, &lt;a href=&quot;https://ds-omeka.haverford.edu/ticha/en/texts.html&quot;&gt;Explore the texts&lt;/a&gt;. In the About section, an introduction of the Zapotec language is provided and a general overview of the project is presented, as well. The About page also explains the encoding data for Ticha, from a linguistic approach the following computer programs were used: FLEx which is Fieldworks Language Explorer, a system for lexical and grammatical analysis, and Text Encoding Initiative standards for paleographic and translational representations of texts. At the bottom of the page, videos with people from the team are presented, which allows users to understand the motivation and processes of the project. This idea is furthered with the contact us section in the About page that allows users to subscribe for e-mail updates and give comment/suggestion to the team. The opportunity to provide feedback to an emerging digital project encourages a space for dialogue with primary texts.&lt;/p&gt;
+
+&lt;p&gt;In the Colonial Zapotec section, the linguistic background is presented about Zapotec, a language that derives from the &lt;a href=&quot;https://en.wikipedia.org/wiki/Oto-Manguean_languages&quot;&gt;Otomanguean family&lt;/a&gt; and its current presence in the State of Oaxaca, Mexico, and the United States. The Colonial Zapotec page explains that the Zapotec in Ticha dates to the colonial period of Mexico from (1521-1821) which is referred to as Colonial Valley Zapotec. The second part of the Colonial Zapotec section presents the cultural context which situates Ticha’s texts in the broader colonial history of Mexico. Christianity played an important role in the religious conversion of indigenous populations and therefore an expansive documentation of these languages that resulted in dictionaries, grammars, and religious works. The page further explains the importance of Ticha as “a window for contemporary indigenous communities and scholars alike to explore Zapotec history, language, and culture”.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;https://ds-omeka.haverford.edu/ticha/en/texts.html&quot;&gt;Explore the texts&lt;/a&gt; section, one finds the corpus of Zapotec-language texts presented on this platform, all from the colonial period. The texts are comprised of three types of primary sources, all of which originated in the Central Valley Zapotec Oaxaca: a grammar, doctrinal materials, and handwritten manuscripts.  &lt;em&gt;Arte en lengua zapoteca&lt;/em&gt;, &lt;em&gt;Doctrina christiana en lengua castellana y çapoteca&lt;/em&gt; and &lt;em&gt;Handwritten texts.&lt;/em&gt; &lt;a href=&quot;https://ds-omeka.haverford.edu/ticha/en/arte.html&quot;&gt;&lt;em&gt;Arte en lengua zapoteca&lt;/em&gt;&lt;/a&gt; is a 16th-century Grammar of Colonial Valley Zapotec which aims to describe the grammatical structure of Zapotec by Dominican Friar Juan de Cordova with the help of unrecognized Zapotec speakers. Based on the historical context, it can be deduced that the grammar book was used to document the language for conversion purposes. This Zapotec grammar follows the structure of a Latin grammar, difficult to understand but it provides knowledge of the Colonial Valley Zapotec language. The section dedicated to  &lt;em&gt;Arte en lengua zapoteca&lt;/em&gt;provides the following materials: an outline of Arte en lengua zapoteca created by George Aaron Broadwell, Victoria Kranz, Brook Danielle Lillehaugen &amp;amp; Michel R. Oudijk with Laurie Allen &amp;amp; Enrique Valdivia in 2014; a PDF version of the text; a transcription of the entire source; a version of the grammar in regularized Spanish; and a sample page of the work the Ticha team is working on. This sample page provides an image of a page from the original text on the left side while on the right side three tabs emerge: transcription of the original text, modern Spanish, and English.&lt;/p&gt;
+
+&lt;p&gt;The second source is a religious text in Zapotec from the year 1567: &lt;em&gt;Doctrina christiana en lengua castellana y çapoteca&lt;/em&gt; written by Dominican Friar Pedro de Feria but with the help of native Zapotec speakers, who are not recognized in the text itself. The &lt;a href=&quot;https://ds-omeka.haverford.edu/ticha/en/doctrina.html&quot;&gt;&lt;em&gt;Doctrina&lt;/em&gt;&lt;/a&gt; has 233 pages, each with a left column of Spanish and the Zapotec translation on the right. This Doctrina was used to explain Catholic doctrine and it provides Zapotec syntax and semantics, and culturally exposing the religious belief of that time. For the &lt;em&gt;Doctrina christiana en lengua castellana&lt;/em&gt;, one finds the complete PDF version of the text and a sample page that provides an image of a page on the left side with a transcription with the original text on the right side.&lt;/p&gt;
+
+&lt;p&gt;The third set of materials presented are fifty &lt;a href=&quot;https://ds-omeka.haverford.edu/ticha/en/handwritten.html&quot;&gt;&lt;em&gt;handwritten manuscripts&lt;/em&gt;&lt;/a&gt; written by Zapotecs, twenty-nine in Zapotec and twenty-one in Spanish, all organized by name, year, town, archive, type of document and language. The topics treated in these manuscripts include religious issues, testaments, wills, deeds, and letters. All of the manuscripts include the following metadata: name of the document, year, town, archive, type of document and language. There is also a sample manuscript that includes an image of the original version in Zapotec and Spanish, and transcriptions from the primary source to standard Romanized alphabet in Zapotec and Spanish. The last part in this same section consists of a timeline of the Colonial Valley Zapotec Documents from 1633-1840 with their respective name town and coded as: Zapotec Testament, Zapotec Bill of Sale, Contemporaneous Spanish Translation and Other.&lt;/p&gt;
+
+&lt;p&gt;Ticha is primarily targeted for an academic audience in fields such as history, anthropology, linguistics, cultural studies, and anyone who is interested in colonial Zapotec. But this platform was also created for the Zapotec community. For instance, in one of the videos, Janet Chávez Santiago, a Zapotec teacher from Teotitlan del Valle, Oaxaca conveyed the excitement of Zapotec students when comparing modern Zapotec to colonial Zapotec using the Ticha platform. In fact, many of the Zapotec students believed these corpora of materials to be abroad and inaccessible. In their essay “Los archivos y la construcción de la verdad histórica en América Latina”, Carlos Aguirre and Javier Villa-Flores state that the archive legitimizes forms of authority and credibility. The authors situate the analysis of the archive from the colonial period and how the Spanish monarchy used the archive for their political and economic benefits, a pattern that continued to be present in post-independence movements (9-10). In this political context, the archive has been used as a weapon to exercise power; yet it is important to note that in the hands of native speakers, these same documents can be used as , “instrumentos de empoderamiento y liberación, salvación y libertad” stated by Eric Katelaar (qt in 16). Ticha is empowering the Zapotec community through the availability and accessibility of colonial texts that strengthen their language and their culture. The academic team through their work, dialogue with the community and acknowledgement of the primary texts is enacting a relationship of reciprocity.&lt;/p&gt;
+
+&lt;p&gt;Digital technology plays an important role in supporting access to the Colonial Valley Zapotec archive. In her essay “The Transnational and the Text-Searchable: Digitized Sources and the Shadows they Cast” Lara Putnam states, “the impact of digitization on the knowability of past processes of whatever scale and locale is significant” (380). Ticha in this particular case is serving both academics and the Zapotec community who are studying the language. The interactive, easy online access Ticha provides is changing the way that Zapotec community members have perceived archives in the past. No longer are they considered untouchable or inaccessible, stated Janet Chávez Santiago. Ticha renders visible voices from the past, present, and future to acknowledge a community that has been silenced. Therefore, as the digital archive develops and expands, how will Ticha continue to serve different audiences, reflect several voices in the archive, and continue to emphasize a sense of reciprocity with the Zapotec community?&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/ticha-review/&quot;&gt;Review of the Ticha Project&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on November 03, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[The Living Archive of Aboriginal Languages: A big step towards giving back]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/review-living-archive/" />
+  <id>http://localhost:4000/blog/review-living-archive</id>
+  <published>2018-11-02T00:00:00-04:00</published>
+  <updated>2018-11-02T00:00:00-04:00</updated>
+  <author>
+    <name>Montserrat Madariaga</name>
+    <uri>http://localhost:4000</uri>
+    <email>montserratmadariaga@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Living Archive of Aboriginal Languages. Charles Darwin University et al, 2012, http://laal.cdu.edu.au/. Accessed 17 oct. 2018&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Reviewed by Montserrat Madariaga-Caro, Graduate Student, Department of Spanish and Portuguese, University of Texas at Austin&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Simplicity is one of the key words for the Living Archive of Aboriginal Languages. The digital repository contains over 3000 books written in 50 Indigenous languages of the Northern Territory of Australia. This huge number of texts is available through a very easy-to-use interface displaying a clickable geographical map, with icons that redirect the user to the materials.&lt;/p&gt;
+
+&lt;p&gt;Another key word for this collection is right there in its name: “Living”. The books are classified as “endangered literatures” on the website, thus the archive is set up to enhance their aliveness by displaying them in an open access online platform. The main goals of this ongoing endeavor are to reconnect these literatures to the communities they belong to, and to aknowledge their place in the Indigenous intelectual histories of the Northern Territory (Bow et al 348).&lt;/p&gt;
+
+&lt;p&gt;Why were these texts disconnected from their social origins in the first place? The answer is in the background story.&lt;/p&gt;
+
+&lt;p&gt;The Living Archive of Aboriginal Languages was created in 2012 by the Charles Darwin University, the Australian National University and the NT Department of Education and Children’s Services, with funding from the Australian Research Council through the Linkage Infrastructure Equipment and Facilities scheme. For a second phase, the archive received financial aid again from the Research Council, and added three more educational institutions to the working team. All these organizations partnered up to gather the scattered books of twenty school-based Literature Production Centres at the Northern Territory, which from 1973 to early 2000 produced an amazing amount of Indigenous knowledge recorded in very simple literary projects.&lt;/p&gt;
+
+&lt;p&gt;The “centres” were part of a discontinued Bilingual Program of northern Australia that aimed to improve the literacy of aboriginal children in their own languages and English. Indigenous and non-Indigenous people worked together in the making of written and illustrated books that contain “teaching materials, literacy primers, childrens’ stories, stories of local cultural significance such as environmental knowledge, traditional practices, oral literature, ethno-botany, history, non-sacred versions of Dreaming or Creation stories, experience stories, instructional manuals, cautionary tales, and many others” (Bow et al 348). The source of these documents were the oral narratives, and common knowledge of the Indigenous communities in their traditional languages. Due to changes to educational policies, by 2010 the majority of the Centres closed, and the schools managed the materials in different ways that ranged from library use to actually destroying them (Bow et al 347-250). Today, some of the physical books are available in special collections of university libraries, and the rest, a large number, are dispersed within local educational centers, and private collections of community members. Therefore, access to these books and the knowledge they hold was selective and/or difficult before the creation of the digital collection.&lt;/p&gt;
+
+&lt;p&gt;Access is a guiding force for this archive, but for whom and how are decisive questions. Jeannette A. Bastian states “the creation of collective memory by nations, communities, or groups of people depends upon their ability to access their own cultural heritage” (81). For Bastian, access should be a fundamental component of custody. The Living Archive takes this insightful argument in practice as an example of postcustodial archiving. The project is not about creating a physical collection of the books, rather it is invested in making mostly neglected material reachable for a diverse group of people –linguists, teachers, students, researches, as their website guide shows, but more importantly the aboriginal communities. This constitutes a redress to the Indigenous peoples that created the books, because the Living Archive liberated their cultural heritage from the custody of a discontinued bilingual educational program and its precarious aftermath.&lt;/p&gt;
+
+&lt;p&gt;What, then, does this redress to the communities look like?&lt;/p&gt;
+
+&lt;p&gt;When one enters the website for the first time a notice titled “Respecting ownership” shows up. It indicates that the contents belong to the “Aboriginal language owners, creators of the materials and their descendants.” This statement distances the Living Archive from practices of appropiation of Indigenous knowledges and goods, historically perpetuated by western libraries, repositories, and museums to this day. The notice also serves as a warning to the Aboriginal and Torres Strait Islander users about the inclusion of “names, images, and voices of people who have passed away”, showing an ethical accountability to the Indigenous peoples’ spirituality.&lt;/p&gt;
+
+&lt;p&gt;Browsing the website is very easy. Also, it is friendly to multiple devices and operating systems. The archivists wanted to make it as inclusive and inviting as they could thinking of “remote communities … specially people who may have limited access to and familiarity with technology” (Bow et al 356). Thus, apart from the mentioned interactive map organized by places and languages, there is a very simple and intuituve menu bar to search for materials by “Place”, “Language”, “People” (authors and illustrators), and “Books”.&lt;/p&gt;
+
+&lt;p&gt;After a selection has been made on the main site, a new page shows a collection of book-covers. Some of them are very colorful, and most of them have a naïve esthetic meant for attracting the attention of children. The metadata is thorough –title, author, illustrator, place, year of publication, abstract, description/genre, and others–, and it is followed by a “Rights Statement”. This announcement asserts a commitment to the Indigenous creators by contacting them for permission to publish, and calls on users to reach out if they feel the book has culturally sensitive material that should not be shown.&lt;/p&gt;
+
+&lt;p&gt;The rights statement entails a decolonial practice: Most of the books’ copyright belong to the Northern Territory Government, but the archivists decided to privilege the intellectual ownership of the creators, and their will to share their creations or not to. Sharing is an essencial part of the project. All the documents are available for exploring in PDF format, and for download. The website has a Creative Common License that favours the use of the materials. This aspect can be read as a way of returning the books to the communities (lets remember they are written in 50 different Indigenous languages), and a way of disseminating self-representations of their cultures (as opposed to a scientific outsider’s portrait of them).&lt;/p&gt;
+
+&lt;p&gt;To sum up, or more accurately to start the conversation, some conclusions are called for. It is important to acknowledge that the Living Archive is not community-based (following &lt;a href=&quot;https://www.saada.org/tides/article/20120418-704&quot;&gt;Michelle Caswell’s reflections&lt;/a&gt;), that is to say, it is not a grassroot independent project looking for a radical decolonization of the Aboriginal communities’ heritage. This is not the case because the archive was designed, and today is managed mostly by powerful knowledge-making universities external to the communities. The website is hosted in the Charles Darwin University Library’s open source Fez and Fedora based research repository. That being said, the Living Archive is a good community-centered model for educational institutions from all over the world that can gather the resources, have the infrastructure and hire the staff to make a project like this possible. Searching for the creators of the texts and illustrations, asking for permission, being open to a negative answer, and being open to removing books from the website shows a long needed respectful attitude towards Indigenous materials in the context of our colonial histories and present practices.&lt;/p&gt;
+
+&lt;p&gt;All in all, what is at stake in the making of this digital repository is the postcustodial turn of archival work, that in the context of Indigenous collections means giving back. The Living Archive gives back by negotiating control over the books. It opens the doors to thinking of postcustodial practices for Indigenous collections preserved by powerful institutions in more radical, decolonial ways. It is a great example of a step foward, with room for more &lt;em&gt;giving back&lt;/em&gt;, for instance, they could change the name Living Archive of Aboriginal &lt;em&gt;Languages&lt;/em&gt; to Living Archive of Aboriginal &lt;em&gt;Literatures&lt;/em&gt;, to redirect the focus from a linguistic interest to what Daniel Heath Justice has stated: “Indigenous literatures matter because &lt;em&gt;Indigenous peoples matter&lt;/em&gt;” (211).&lt;/p&gt;
+
+&lt;p&gt;Works Cited&lt;/p&gt;
+
+&lt;p&gt;Bow, Catherine et al. “Developing a Living Archives of Aboriginal Languages”. &lt;em&gt;Language Documentation and Conservation&lt;/em&gt;. 8, 2014, pp. 345-360.&lt;/p&gt;
+
+&lt;p&gt;Bastian, Jeannette. “Taking Custody, Giving Access: A Postcustodial role for a new Century”. &lt;em&gt;Archivaria&lt;/em&gt;. 53, 2002, pp. 76-93.&lt;/p&gt;
+
+&lt;p&gt;Heath Justice, Daniel. &lt;em&gt;Why Indigenous Literatures Matter&lt;/em&gt;. Wilfred Laurier University Press. 2018.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/review-living-archive/&quot;&gt;The Living Archive of Aboriginal Languages: A big step towards giving back&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on November 02, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review of the Mexico Project]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/Mexico-Project/" />
+  <id>http://localhost:4000/blog/Mexico-Project</id>
+  <updated>10/17/2018T00:00:00-00:00</updated>
+  <published>2018-10-19T00:00:00-04:00</published>
+  
+  <author>
+    <name>Mia Gomez</name>
+    <uri>http://localhost:4000</uri>
+    <email>miag2193@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;https://nsarchive.gwu.edu/project/mexico-project , Accessed October 2, 2018.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Reviewed by Mia Gomez, Graduate Student, Department of History, the University of Texas at Austin&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Mexico Project&lt;/em&gt; is a digital resource organized under the private organization &lt;a href=&quot;https://nsarchive.gwu.edu/&quot;&gt;the National Security Archive&lt;/a&gt; consisting of primary source documents from government agencies in both the United States and Mexico. Authors, journalists, and historians contextualize these documents, including them in specific narratives about important events in Mexican history, such as &lt;a href=&quot;https://nsarchive2.gwu.edu/NSAEBB/NSAEBB99/&quot;&gt;the Tlatelolco Massacre of 1968&lt;/a&gt;, &lt;a href=&quot;https://nsarchive2.gwu.edu/NSAEBB/NSAEBB91/&quot;&gt;the Corpus Christi Massacre of 1971&lt;/a&gt;, and &lt;a href=&quot;https://nsarchive2.gwu.edu/NSAEBB/NSAEBB115/index.htm&quot;&gt;the economic crash of 1976&lt;/a&gt;. Journalists and scholars founded &lt;em&gt;the Mexico Project&lt;/em&gt; in 1985 to serve several different purposes, such as repository of declassified government records, center for investigative journalism, and institute for international research, leading the charge in public access to information under &lt;a href=&quot;https://www.foia.gov/&quot;&gt;the U.S. Freedom of Information Act (FOIA)&lt;/a&gt;. Co-directed by senior analyst of U.S. policy in Latin America, Kate Doyle, and senior analyst and director of the Colombia Project and Mexico Migration Project, Michael L. Evans, &lt;em&gt;The Mexico Project’s&lt;/em&gt; main goal has been to identify and disseminate to the public important declassified documents regarding the history of state-sanctioned violence and human rights in Mexico.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Mexico Project&lt;/em&gt; can be accessed under the “Projects” drop-down menu on the National Security Archive’s &lt;a href=&quot;https://nsarchive.gwu.edu/&quot;&gt;home page&lt;/a&gt;. Users are redirected to the project’s main page where they are shown a brief description of the project and have access to featured stories, blog posts, and previous entries, as well as a short profile of the project’s co-directors. Users can search documents in the &lt;a href=&quot;https://nsarchive.gwu.edu/virtual-reading-room&quot;&gt;Virtual Reading Room&lt;/a&gt;, which can be accessed by clicking “Documents” on the menu bar. Here, users are given the option to narrow down their search by month and year. Additionally, documents can be found within the many stories offered on the project’s website. For example, a user interested in researching the Tlatelolco Massacre of 1968 can click on and read the story &lt;a href=&quot;https://nsarchive2.gwu.edu/NSAEBB/NSAEBB99/&quot;&gt;“The Tlatelolco Massacre: U.S. Documents on Mexico and the Events of 1968”&lt;/a&gt; written and edited by the project’s co-director Kate Doyle and published on the website in 2003. Here, users can see how journalists and scholars use the project’s documents within their work, and the documents the authors examine are provided for users toward the bottom of the page upon finishing each story.&lt;/p&gt;
+
+&lt;p&gt;The documents included are varied, consisting of government correspondence, agency statements, memorandums of conversations, intelligence reports, letters, police documents, and hospital records. The documents here are organized numerically and by government agency, such as the U.S. Embassy in Mexico, the Central Intelligence Agency (CIA), the Department of State, and the Federal Bureau of Investigation (FBI). Each document contains a brief description of what the user can expect to see upon opening the document, including the date it was written, who wrote or created it, who was the intended audience,what the record contains, its declassified status and sensitivity, and the source wherein which the record was originally found.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Mexico Project’s&lt;/em&gt; chief aim is to disseminate information to the public and to make declassified documents increasingly available in Mexico. With over 1,600 Freedom of Information requests having been filed by the project since &lt;a href=&quot;https://nsarchive.gwu.edu/about-mexico-project&quot;&gt;1994&lt;/a&gt;, its existence specifically as a digital archive has sparked debates over freedom of information in Mexico since its inception in 1985. The project’s goals also demonstrate how archives can act as centers of activism within a given community. Kristen Weld’s &lt;em&gt;Paper Cadavers: The Archives of Dictatorship in Guatemala&lt;/em&gt;, published in 2014, echoes this point, asserting that archival creation reveals how communities understand both their past and present. Although Weld’s work focuses on the preservation and digitization of Guatemalan police records, her analysis demonstrates how the information contained within a particular document can be reimagined within the context it is rediscovered. For the archivists working on &lt;em&gt;the Mexico Project&lt;/em&gt;, the documents are not only political within the context they were created, but their declassification reminds the community about its traumatic history, as well as addressing issues of government transparency and violence in the modern era.&lt;/p&gt;
+
+&lt;p&gt;With that being said, the biggest opportunity for researchers and writers is with the website’s lack of updated material. A three-year gap exists between the most recent story, having been published on October 2, 2018, and the previous story dating back to 2015. Although &lt;em&gt;the Mexico Project&lt;/em&gt; features publications by online media that cite the project and its contributors, the website could benefit from more regular postings and a more diverse set of stories. Because of the lack of narrative variety, scholars now have opportunities to reimagine and reinterpret the National Security Archive’s holdings. Many of the posts concentrate on a set of specific historical events, such as massacres and narco-related terrorism. While these stories are important and useful for both scholars and community activists, there exists a gap waiting to be filled by a variety of stories and methodological and theoretical approaches.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/Mexico-Project/&quot;&gt;Review of the Mexico Project&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on October 19, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Queering the Method]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/4rios-review/" />
+  <id>http://localhost:4000/blog/4rios-review</id>
+  <published>2018-10-18T00:00:00-04:00</published>
+  <updated>2018-10-18T00:00:00-04:00</updated>
+  <author>
+    <name>Kaitlin Burns</name>
+    <uri>http://localhost:4000</uri>
+    <email>kapassa@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;4-ríos-and-archival-narration&quot;&gt;“4 Ríos” and Archival Narration&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.halperta.com/criticalarchives/blog/4rios-espanol/&quot;&gt;Disponible en español&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://4rios.co&quot;&gt;4 Ríos Digital Archive&lt;/a&gt;. &lt;a href=&quot;http://4rios.co&quot;&gt;http://4rios.co&lt;/a&gt;. Accessed 28 Sept. 2018.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Reviewed by Kaitlin Burns, University of Texas at Austin&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The “4 Ríos” digital archive uses artful innovation to paint the indigenous and afro-descendant population of Colombia in the crossfire of armed conflict that has endured over more than forty years. This digital collection inspires the question “What is an archive?” as it reshapes notions on how information must be organized and presented. It provides an example of Zeb Tortorici’s concept of &lt;em&gt;queering the archive&lt;/em&gt;, wherein the researcher must adopt unconventional methods to tell the story that is usually left out of history. A truly multi-media experience, “4 Ríos” compiles video, testimony, art, and online sources in the larger framework of an interactive, graphic novel. Visitors to the archive participate in their own education regarding how the lives of Colombian people were destroyed in the war between paramilitary and military forces, while witnessing information on the massacre at Alto de Naya in April 2001.&lt;/p&gt;
+
+&lt;p&gt;Elder Manuel Tobar, an Audiovisual Producer and Social Activist by trade, created and directed the “4 Ríos” information collective in 2013. The description of his extensive team of specialists and their roles reads like movie credits, since the execution of this archive required unique talents such as actors, set designers, and story board creators. The project received the Premio Crea Digital in 2013 in recognition of its narrative value and commitment to social and political responsibility, and was funded through awards and grants from IDARTES (Instituto Distrital de las Artes) and Pontificia Universidad Javeriana in 2012, as well as through the Colombian Ministry of Culture in 2011.&lt;/p&gt;
+
+&lt;p&gt;The stated goal of “4 Ríos” is to “propose other forms of approaching memory, to construct spaces of exchange and debate, to raise awareness about these facts, to not forget, to rescue that which, through the passing of time, is believed to be lost” (&lt;a href=&quot;http://4rios.co/blog/proyecto/&quot;&gt;Proyecto&lt;/a&gt;, &lt;em&gt;my translation&lt;/em&gt;). This is achieved by recounting experiences, facts, and the background and succession of events in recent history of armed conflict in Colombia - specifically the 2001 massacre on the river Naya.&lt;/p&gt;
+
+&lt;p&gt;On the opening webpage of “4 Ríos”, the user’s inital reaction is that of curious confusion, since the archive is not immediately recognizable as such. One might feel estranged by prior experiences with prototypical digital collections, library-like in their organization, as one attempts to master the interface and search for specific documentation. A visitor to “4 Ríos” transforms their experience when they agree to surrender instead, becoming a spectator as the narrative unfolds in graphic novel style, subject to the creators’ conceived succession of information flow. If my description seems beyond grasp, it is because one must participate in this interactive historical retelling to conceive of its form.&lt;/p&gt;
+
+&lt;p&gt;“4 Ríos” is not a researcher’s archive. It is an archive for the people. A participant is presented with a series of choices while exploring the collection - choices which determine which set of information will present itself. A click on the largest of circles (&lt;a href=&quot;http://4rios.co/elnaya&quot;&gt;“4 Ríos: El Naya”&lt;/a&gt;) leads one to the digital graphic novel which benevolently contains a tutorial for the novice user. By arrowing forwards, sound, comic book-like art, and video clips chronologically narrate the events surrounding what came to pass that April 11 of 2001 in Naya. A meta-index below the narration provides documented information on details of the events with links to official documents online which are revealed as the participant progresses in the historical telling. The compilation is beautiful in its execution and harrowing in its narration. As the user surrenders to its innovative style, one is split both by awe at the compelling experience and by furious sadness at the murderous events.&lt;/p&gt;
+
+&lt;p&gt;A tap to the smaller circle at the left (&lt;a href=&quot;http://4rios.co/elnaya/flujo&quot;&gt;“Flujo de Memorias”&lt;/a&gt;) brings one into a vibrant forum of expression, where a participant can leave thoughts for future viewers by drawing a picture, or leaving a written or recorded message. A swipe of the mouse reveals that the colorful dots flowing across the stream are the river of memories left by past users, and exploring these fragments grants another dimension to archival information. The site is further divided into the sections (&lt;a href=&quot;http://4rios.co/blog/expansiones-y-plataformas/&quot;&gt;“Plataformas y Expansiones”&lt;/a&gt;), (&lt;a href=&quot;http://4rios.co/blog&quot;&gt;“4 Ríos” blog&lt;/a&gt;), (&lt;a href=&quot;http://4rios.co/blog/equipo&quot;&gt;“Equipo”&lt;/a&gt;), (&lt;a href=&quot;http://4rios.co/blog/proyecto&quot;&gt;“¿Qué es 4 Ríos?”&lt;/a&gt;), and (&lt;a href=&quot;http://4rios.co/blog/reconocimientos&quot;&gt;“Reconocimientos”&lt;/a&gt;). Though the rabbit trail of links can be confusing at times, this archive is a terrible beauty which serves the scholar and the inquisitive learner at once. The visually stimulating experience can stop at that, or it can be further prodded by pursuing the more in-depth information whose content fuels the narration. All links and sources can be found throughout the interactive sequence, but the investigator might prefer to have these resources in one place, since the storyline is composed of fifty-two untitled frames. A search of this magnitude could turn somewhat nightmarish for the researcher who is trying earnestly to stumble upon a specific document or piece of information.&lt;/p&gt;
+
+&lt;p&gt;At moments, it is evident that the page could use an update, since some of the links have gone bad and a few slides of the novel appear blank. Additionally, the opening webpage would benefit from its own tutorial to quell the inital confusion felt by a visitor who is expecting to conduct an autonomous search for information. Finally, the site could be improved by including all breadcrumbs on the inital page, since one can easily get lost in the links upon links that lead to different locations.&lt;/p&gt;
+
+&lt;p&gt;All criticisms aside, the unique construction of the “4 Ríos” archive calls into question institutionalized norms regarding what an archive is and how it functions. Zeb Tortorici states, “&lt;em&gt;queer archivalism&lt;/em&gt;, in the words of Elizabeth Freeman - allows us to explore the fraught (and anachronistic) relations between past and present, archive and the document, historian and witness, writer and written of, consumer and consumed” (2018, 15-16). The “4 Ríos” collection guides its participants through the narration of events, facilitating education on the massacre of the Naya while providing access to important documentation through online links and video testimony, and questioning beaurocratic institutions of control.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/4rios-review/&quot;&gt;Queering the Method&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on October 18, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Queerizando el método]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/4rios-espanol/" />
+  <id>http://localhost:4000/blog/4rios-espanol</id>
+  <published>2018-10-18T00:00:00-04:00</published>
+  <updated>2018-10-18T00:00:00-04:00</updated>
+  <author>
+    <name>Kaitlin Burns</name>
+    <uri>http://localhost:4000</uri>
+    <email>kapassa@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;4-ríos-y-la-narración-archivística&quot;&gt;“4 Ríos” y la narración archivística&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.halperta.com/criticalarchives/blog/4rios-review/&quot;&gt;Also available in English&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://4rios.co&quot;&gt;4 Ríos Digital Archive&lt;/a&gt;. &lt;a href=&quot;http://4rios.co&quot;&gt;http://4rios.co&lt;/a&gt;. Fue accedido el 28 de septiembre de 2018.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Reseñado por Kaitlin Burns, University of Texas at Austin&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;El archivo digital “4 Ríos” utiliza la innovación artística para pintar a la población indígena y afrodescendiente de Colombia en medio del fuego cruzado de un conflicto armado que ha durado por más de cuarenta años. Esta colección nos inspira a preguntarnos, “Qué es un archivo?” mientras reformula ideas de cómo se debe organizar y presentar la información. El archivo funciona como ejemplo de lo que Zeb Tortorici describe como &lt;em&gt;queerizando el archivo&lt;/em&gt;, en donde el investigador debe adoptar los métodos no convencionales para contar la versión que normalmente se excluye de la historia oficial. Siendo una experiencia verdaderamente multimedia, “4 Ríos” compila video, el género del testimonio, el arte y otros recursos audiovisuales en la forma de una novela gráfica. Los visitantes del archivo se vuelven participantes activos de su propio aprendizaje mientras atestiguan datos sobre la masacre en Alto de Naya, así como también de las vidas del pueblo colombiano, las cuales han sido destruidas en la guerra entre los esfuerzos militares y paramilitares en abril 2001.&lt;/p&gt;
+
+&lt;p&gt;Elder Manuel Tobar es productor audiovisual y activista social, y es quién creó y dirigió el colectivo informático de “4 Ríos” en 2013. La descripción de su equipo de especialistas y sus roles se leen como créditos cinemáticos, porque en la realización de este archivo se requirió talentos únicos como actores, escenográficos y guionistas gráficos. El proyecto recibió el Premio Crea Digital en 2013 en reconocimiento a su valor narrativo y su dedicación a la responsabilidad tanto social como política del país. Este proyecto se financió por premios y becas de IDARTES (Instituto Distrital de las Artes) y la Pontificia Universidad Javeriana en 2012 y con apoyo del Ministro de Cultura de Colombia en 2011.&lt;/p&gt;
+
+&lt;p&gt;El objetivo proclamado de “4 Ríos” es “proponer otras formas de acercarnos a la memoria, a la construcción de espacios de intercambio y debate, de sensibilizarnos ante estos hechos, de no olvido, del rescate de aquello que por el paso del tiempo se cree perdido” (&lt;a href=&quot;http://4rios.co/blog/proyecto/&quot;&gt;Proyecto&lt;/a&gt;). Esto se logra por relatar experiencias, hechos, y el fondo y sucesión de eventos de la historia reciente del conflicto armado en Colombia — específicamente el masacre de 2001 en el río Naya.&lt;/p&gt;
+
+&lt;p&gt;En la página inicial de “4 Ríos”, la reacción del usuario podrá ser tanto de confusión como de curiosidad, puesto que el archivo no se reconoce como tal. El usuario puede sentirse reticente a explorar este archivo mientras se intenta dominar la interfaz, pues se aleja a las formas tradicionales de organización de colecciones digitales. El visitante al sitio “4 Ríos” transforma su experiencia cuando acepta a tratar el archivo bajo sus propios términos, y así, se convierte en un espectador a medida que la narrativa se va desarrollando en la forma de una novela gráfica. De esta manera, el visitante se ve sujeto a la sucesión concebida por los creadores del flujo de información. Si mi descripción parece liosa, es porque uno debe ser partícipe en la reiteración histórica interactiva para entender su forma.&lt;/p&gt;
+
+&lt;p&gt;“4 Ríos” no es archivo para el investigador de la academia, sino que es un archivo para el pueblo. El usuario del archivo participa de éste por medio de una serie de elecciones mientras explora la colección. Dichas elecciones determinan el grupo de información que se presenta. El círculo grande (&lt;a href=&quot;http://4rios.co/elnaya&quot;&gt;“4 Ríos: El Naya”&lt;/a&gt;) es un link que redirige al usuario a la novela gráfica, el cual contiene un tutorial para el usuario que por primera vez explora el sitio. Al apretar la flecha para seguir en la narración del sitio, el sonido, la estética del cómic y los clips del video narran cronológicamente los eventos que sucedieron ese 11 de abril de 2001 en Naya. Un meta-índice ubicado debajo de las imágenes provee información documentada de los detalles de los acontecimientos con enlaces a documentos oficiales en línea, los cuales se revelan según el progreso del participante en este relato histórico. La compilación es hermosa en su ejecución y desgarradora en su narración. Al entregarse al estilo innovador, la experiencia del usuario puede dividirse en asombro y gran tristeza, pues la experiencia es cautivadora pero los sucesos son dolorosos.&lt;/p&gt;
+
+&lt;p&gt;Al cliquear en el círculo más pequeño de la izquierda (&lt;a href=&quot;http://4rios.co/elnaya/flujo&quot;&gt;“Flujo de memorias”&lt;/a&gt;), este enlace lleva al usuario a un foro de expresión en donde el participante puede dejar dibujos o comentarios para futuros espectadores. También el usuario podrá dejar un mensaje escrito o de voz. Al deslizar el puntero por la pantalla, se revelan los puntos coloridos que fluyen por el arroyo y que son el río de memorias dejado por otros usuarios. Al explorar estos fragmentos se concede una dimensión distinta a la información archivística. El sitio se divide en más secciones: (&lt;a href=&quot;http://4rios.co/blog/expansiones-y-plataformas/&quot;&gt;“Plataformas y Expansiones”&lt;/a&gt;), (&lt;a href=&quot;http://4rios.co/blog&quot;&gt;“4 Ríos” blog&lt;/a&gt;), (&lt;a href=&quot;http://4rios.co/blog/equipo&quot;&gt;“Equipo”&lt;/a&gt;), (&lt;a href=&quot;http://4rios.co/blog/proyecto&quot;&gt;“¿Qué es 4 Ríos?”&lt;/a&gt;) y (&lt;a href=&quot;http://4rios.co/blog/reconocimientos&quot;&gt;“Reconocimientos”&lt;/a&gt;). Aunque el vericueto de enlaces hace que la navegación se haga confusa a veces, este archivo es de una belleza terrible que sirve tanto al académico como al aprendiz inquisitivo. La experiencia visual puede parar ahí, o puede ser estimulada más profundamente para continuar interactuando con la información detallada cuyo contenido alimenta la narración. Se puede encontrar los enlaces y fuentes a través de la secuencia interactiva, pero el investigador tal vez preferería tener los recursos colocados en un solo lugar, puesto que la trama se compone de cincuenta y dos marcos sin títulos. Una búsqueda de esta magnitud se convertiría en pesadilla para el usuario que pretende conscientemente toparse con un documento o información en específico.&lt;/p&gt;
+
+&lt;p&gt;En ciertos momentos, se nota la necesidad de actualizar la página, puesto que algunos enlaces no funcionan y algunas diapositivas aparecen en blanco. Además, la página de introducción se beneficiaría de su propio tutorial para despejar las dudas iniciales al que el usuario se enfrenta, y quién espera poder conducir una búsqueda autónoma de información. Por último, el sitio se puede mejorar con la inclusión del camino de navegación en la página inicial, puesto que uno se puede perder siguiendo los enlaces de los enlaces que se dirigen a lugares distintos.&lt;/p&gt;
+
+&lt;p&gt;Dejando el criticismo de lado, la construcción única del archivo “4 Ríos” cuestiona las normas institucionales en torno a qué elementos constituyen un archivo y cómo funcionan. Zeb Tortorici constata que, “&lt;em&gt;queer archivalism&lt;/em&gt;, in the words of Elizabeth Freeman - allows us to explore the fraught (and anacronistic) relations between past and present, archive and the document, historian and witness, writer and written of, consumer and consumed” (2018, 15-16). La colección “4 Ríos” guía a sus participantes en la narración de eventos, facilitando la educación en torno a la masacre de los Naya mientras provee acceso a una documentación importante a través de enlaces en línea y testimonios, cuestionando las instituciones burocráticas de control.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/4rios-espanol/&quot;&gt;Queerizando el método&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on October 18, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review of the Periódicos e literatura Collection]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/review-of-periodicos-e-literatura/" />
+  <id>http://localhost:4000/blog/review-of-periodicos-e-literatura</id>
+  <published>2018-10-17T00:00:00-04:00</published>
+  <updated>2018-10-17T00:00:00-04:00</updated>
+  <author>
+    <name>Joshua Gabriel Ortiz Baco</name>
+    <uri>http://localhost:4000</uri>
+    <email>joshuaortizbaco@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;“Periódicos e literatura: publicações efêmeras, memória permanente.” Edited by 
+Irineu E. Jones Corrêa et al., &lt;em&gt;Periódicos e Literatura&lt;/em&gt;, Biblioteca Nacional Digital de Brasil, Fundação Biblioteca Nacional de Brasil, 2006, bndigital.bn.gov.br/dossies/periodicos-literatura/. Accessed 1 October 2018.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Reviewed by Joshua G. Ortiz Baco, University of Texas at Austin&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The project &lt;a href=&quot;https://bndigital.bn.gov.br/dossies/periodicos-literatura&quot;&gt;&lt;em&gt;“Periódicos e literatura: publicações efêmeras, memória permanente”&lt;/em&gt;&lt;/a&gt; is a curated collection of materials digitized by the &lt;a href=&quot;http://bndigital.bn.gov.br/hemeroteca-digital/&quot;&gt;&lt;em&gt;National Digital Library of Brazil&lt;/em&gt;&lt;/a&gt; (NDLB) with originals housed in the &lt;a href=&quot;https://bn.gov.br/&quot;&gt;&lt;em&gt;National Library of Brazil Foundation&lt;/em&gt;&lt;/a&gt; (Foundation). Coordination of the objects, researchers, staff, and content is done by Irineu E. Jones Corrêa, Maria Ione Caser da Costa and Maria do Sameiro Fangueiro. The dossiê, as the collection type is referred to, is focused on developing the NDLB’s larger collection of Brazilian and Portuguese periodicals by expanding, describing and showcasing materials across different physical collections that highlight the relationship between the evolution of the press industry, authors and literature. The legalization of the press in Imperial Brazil, at the beginning of the 19th century, had an almost immediate impact as a public space for discussions about literature which this project seeks to recover and put into context.&lt;/p&gt;
+
+&lt;p&gt;The selection of newspapers organize the collection, but the materials also include manuscripts, maps, photographs, drawings, and transcriptions of literary works. The &lt;a href=&quot;http://bndigital.bn.gov.br/dossies/periodicos-literatura/titulos-periodicos-literatura/indice-dos-titulos/&quot;&gt;&lt;em&gt;sixty-six&lt;/em&gt;&lt;/a&gt; newspapers are organized alphabetically by title and span from the early 1800s to the beginning of the 1900s; each entry includes a brief monograph detailing: the form of the actual newspaper, the editorial aims, and significant writers that participated as collaborators. The &lt;a href=&quot;http://bndigital.bn.gov.br/dossies/periodicos-literatura/personagens-periodicos-literatura/indice-dos-personagens/&quot;&gt;&lt;em&gt;authors&lt;/em&gt;&lt;/a&gt; have a separate section with a biographical sketch, a transcription of an excerpt of a text published in the newspaper, a link to the digital object of the physical book, if available, and where the text was published. The nine items in the &lt;a href=&quot;http://bndigital.bn.gov.br/dossies/periodicos-literatura/titulos-manuscritos/apresentacao-titulos-manuscritos/&quot;&gt;&lt;em&gt;manuscripts section&lt;/em&gt;&lt;/a&gt; are handwritten newspapers and typesetting sketches with their own descriptions for each. The sixteen &lt;a href=&quot;http://bndigital.bn.gov.br/dossies/periodicos-literatura/tipografias/tipografias-cariocas/&quot;&gt;&lt;em&gt;publishing houses&lt;/em&gt;&lt;/a&gt; also have individual pages describing their historical location with its contemporary address, and include hyperlinks to the newspapers in which they were published as well as a historical map of the area. The last two sections list the affiliated &lt;a href=&quot;http://bndigital.bn.gov.br/dossies/periodicos-literatura/pesquisas-e-pesquisadores/pesquisas/&quot;&gt;&lt;em&gt;projects&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;http://bndigital.bn.gov.br/dossies/periodicos-literatura/pesquisas-e-pesquisadores/pesquisadores/&quot;&gt;&lt;em&gt;researchers&lt;/em&gt;&lt;/a&gt;, and &lt;a href=&quot;http://bndigital.bn.gov.br/dossies/periodicos-literatura/publicacoes/&quot;&gt;&lt;em&gt;publications&lt;/em&gt;&lt;/a&gt; that were informed by this project or that were used to generate the content for the descriptions.&lt;/p&gt;
+
+&lt;p&gt;In order to understand the collection, it’s important to understand the organizing principles of the larger news archive from which the materials have been selected. This is in part because the coordinators of the project are part of the staff of the NDLB. The Hemeroteca’s role is also important because the NDLB was conceived as an extension of the Foundation, differing only in that it is also responsible for uniting and completing collections housed in different institutions and facilitating digital collection development for partners. The constitutive goals of &lt;a href=&quot;http://bndigital.bn.gov.br/sobre-a-bndigital/missao/&quot;&gt;&lt;em&gt;preserving national memory and activating its other collections&lt;/em&gt;&lt;/a&gt; are explicitly privileged as well in this project. However, the way digitization and digital objects are ambivalently framed in the introductory page is reflected throughout the site in issues discussed later.&lt;/p&gt;
+
+&lt;p&gt;The collection appears to consciously serve two communities: library staff and humanities researchers. The majority of the publications drawing on the collection have been &lt;a href=&quot;http://bndigital.bn.gov.br/dossies/periodicos-literatura/publicacoes/&quot;&gt;&lt;em&gt;technical and research papers&lt;/em&gt;&lt;/a&gt; in LIS journals. The Foundation is the biggest cultural heritage repository in the country and the NDLB shares this position as its digital parallel. All this to say that, the impact of the collection is significant considering its status as an example of digital project development in Brazil and the fact that it has the potential to link itself with almost 2 million documents across thousands of other collections housed in the archives. The site only links to a few publications that are affiliated with the collection, but the avenues for research include literary studies, history, media studies, journalism, and digital humanities, among others. All of the information that has been selected would have lived independently of each other and in different archives, even off site. Bringing them together means that a user could be interested in one item or person reflected in the collection and - owing to the metadata and narrativized pages being thorough - end up in an almost unrelated area within or beyond the collection. I mention metadata because, despite not being easily accessible, the work of librarians and archivists shows in the extensively layed out interrelatedness of the materials and information presented.&lt;/p&gt;
+
+&lt;p&gt;There is also a productive tension between library staff and humanities researchers that can be summarized as an issue of “essences”, as Ann Stoler proposes the term in &lt;em&gt;Along the Archival Grain: Epistemic Anxieties and Colonial Commonsense&lt;/em&gt; (4). Both groups work for the mission of preserving Brazilian memory and patrimony. This is what could be termed the essence of the country. Nevertheless, in the LIS articles there is a trend of &lt;a href=&quot;http://www.unirio.br/ppgb/arquivo/maria-ione-caser-da-costa/view&quot;&gt;&lt;em&gt;historicizing&lt;/em&gt;&lt;/a&gt; and &lt;a href=&quot;http://www.letras.ufrj.br/prisma/jornada4.htm&quot;&gt;&lt;em&gt;challenging&lt;/em&gt;&lt;/a&gt; the &lt;a href=&quot;https://portal.febab.org.br/anais/article/view/1320&quot;&gt;&lt;em&gt;evolution&lt;/em&gt;&lt;/a&gt; of the Foundation and its digital counterpart. Meanwhile, the humanities publications listed on the website don’t focus on the digital objects being analyzed. This is also reflected in the monographs on the website, where extensive archival work was done and is only reflected in the material description of the items and the bibliographic reference. There is an implied stability and fixity of meaning in this last method since the tangible objects are treated as stable things that aren’t affected by their digital counterpart. In contrast, in the &lt;a href=&quot;https://www.bn.gov.br/es/node/3709&quot;&gt;&lt;em&gt;work by the librarians&lt;/em&gt;&lt;/a&gt;, the materials are evolving and shifting the national imaginary and the very conditions in which it was created precisely because there is also a recognition of the process of creating, managing and accessing this new material. This last approach is more in line with current interpretations of the “unique space” of intersecting traditions afforded by the analog and the digital, to which Bonnie Mak calls attention to in “Archaeology of a Digitization” (1516).&lt;/p&gt;
+
+&lt;p&gt;Proof of the generative intersection of the two approaches can be found in the NDLB official stance, which already recognizes the potential effects of digitized materials even when it limits itself to a restrictive definition of digital initiatives. As mentioned before, there is a conflict in the way that the digital is presented in the narratives about the NDLB. The &lt;a href=&quot;https://bndigital.bn.gov.br/sobre-a-bndigital/apresentacao/https://bndigital.bn.gov.br/sobre-a-bndigital/apresentacao/&quot;&gt;&lt;em&gt;introduction page&lt;/em&gt;&lt;/a&gt; considers that digitization exposes the crises of cultural structures related to the book and reading, and then goes into a lengthy discussion of the pitfalls of amassing cultural objects and the techno-market. This appears to affect usability in significant ways such as absence of a search feature; sorting mechanisms or easily identifiable metadata; and performing a reiteration of “needing to know what you are looking for” even when there is a different thematic organization of the materials than what is commonly found in the Foundation. The website also becomes inaccessible for hours. I believe this is partially due to budget constraints, but also to the framing of the objects as digital copies as opposed to truly valuable physical materials. For example, digitization is used as a justification for limiting access to the physical materials to prevent their deterioration.&lt;/p&gt;
+
+&lt;p&gt;Notwithstanding, the content of the collection can be considered limited primarily because of its vastness. Caser da Costa lists the figure of four hundred potential texts that may be eventually included. The amount of material is sufficient to meet the goals of the project and facilitate research in an area that is gaining traction in &lt;a href=&quot;http://oceanicexchanges.org/&quot;&gt;&lt;em&gt;digital humanities&lt;/em&gt;&lt;/a&gt; and &lt;a href=&quot;http://scholarlyediting.org/2013/editions/intro.cwnewspaperpoetry.html&quot;&gt;&lt;em&gt;literary studies&lt;/em&gt;&lt;/a&gt;. The positive effect of the collection is also felt in the field of LIS, starting with the example of Caser da Costa, who transitioned from a master’s student that researched the collection and now is one of the coordinators. This has continued through a number of events and workshops led by coordinators of the digital components of the collection in recent years. This last impact was not contemplated in the original conception of the project and may produce improvements to the overall project and the people involved. It also serves as a demonstration of how conceiving of the collection as a digital project can help to ameliorate some of the platform’s limitations in the future and open up the materials to other approaches and methodologies.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/review-of-periodicos-e-literatura/&quot;&gt;Review of the Periódicos e literatura Collection&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on October 17, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Reseña de la Colección Escritos de Mujeres]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/rese%C3%B1a-coleccion-escritos-de-mujeres/" />
+  <id>http://localhost:4000/blog/reseña-coleccion-escritos-de-mujeres</id>
+  <published>2018-10-11T00:00:00-04:00</published>
+  <updated>2018-10-11T00:00:00-04:00</updated>
+  <author>
+    <name>Pilar Villanueva</name>
+    <uri>http://localhost:4000</uri>
+    <email>mdv769@utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;em&gt;Escritos de mujeres&lt;/em&gt;. Instituto de Investigaciones sobre la Universidad y la Educación, 
+Universidad Autónoma de México. Web. 29 septiembre 2018. (http://www.iisue.unam.mx/escritoras/)&lt;/p&gt;
+
+&lt;p&gt;“La historia la escriben los vencedores”. Esta famosa cita atribuida a Napoleón Bonaparte se ha convertido en un lugar común al hablar de historia. Ha sido usada para señalar la lucha y dominación entre dos culturas, clases, o razas, pero rara vez se ha analizado en términos de género. Ahora bien, lo más interesante de esta es que revela el carácter procedimental de la historia; una narrativa donde se construye &lt;em&gt;lo que pasó&lt;/em&gt;, y &lt;em&gt;lo que se dice que pasó&lt;/em&gt; (Trouillot 2). En este sentido, es necesario preguntarse no solo quiénes han escrito la historia, sino que también qué género es el que lo ha hecho. Es en esta reflexión que llego al archivo, y en este caso, al archivo de las mujeres.&lt;/p&gt;
+
+&lt;p&gt;La &lt;em&gt;Colección escritos de mujeres&lt;/em&gt;, es una iniciativa que comenzó en un curso de posgrado de la Universidad Autónoma de México. 
+Un grupo de estudiantes comenzaron a cuestionar el vacío respecto a la experiencia individual y colectiva de las mujeres en los archivos. En este contexto se creó esta colección, que busca la edición y difusión de los textos escritos por mujeres entre el siglo XVI y XVIII, con el fin de “conocer cómo y para qué escribieron”. El grupo inició con tan solo 10 manuscritos y a la fecha ya tienen más de 
+80 documentos que permanecían inéditos. De este corpus, se han publicado cuatro libros completos, cada uno correspondiente a los escritos de una mujer: &lt;strong&gt;Inés de la Cruz, Mariana de la Encarnación, Isabel Manuela de Santa María&lt;/strong&gt;, y &lt;strong&gt;Marquesa de las Amarillas&lt;/strong&gt;. 
+Las dos primeras corresponden a las monjas que fundaron el primer Convento de las Carmelitas Descalzas, y cuentan las dificultades que tuvieron que enfrentar para conseguir este espacio solo para mujeres. El tercer libro trata del misticismo de Isabel Manuela de Santa María que, mediante la experiencia sensorial del amor, produce una fusión con la divinidad. El último libro, corresponde al diario de viajes de la Marquesa de Amarillas, una mujer de la oligarquía que junto a su esposo viajaron de Cádiz hasta la ciudad de México.&lt;/p&gt;
+
+&lt;p&gt;Como mujer y feminista, encontrarme con estos archivos significa una posibilidad hacia la (re)construcción de nuestra memoria y de ciertos silencios de la historia. Volver a estos archivos y publicarlos no solo implica escuchar la voz de las mujeres de la época, sino que también identificar el poder que ha estado atado a estas narrativas. Trouillot (1995) reconoce que los silencios de la historia ocurren en cuatro momentos cruciales; la creación del hecho (la fuente), la realización del archivo (registro), la recuperación (narración del hecho), y el significado retrospectivo (se convierte en historia) (pág. 26). En este sentido, estos archivos nos permiten reflexionar sobre estos cuatro momentos y la marginalización de la mujer, pues el hecho de que la imprenta estuviese cerrada para las mujeres o que muchas tuvieran que firmar bajo identidades masculinas, nos hablan de una realidad histórica y social asociada al género.&lt;/p&gt;
+
+&lt;p&gt;Me pregunto entonces, ¿por qué los eventos relacionados a las mujeres no se consideraron? ¿Por qué las mujeres escribieron su testimonio aún bajo estas condiciones? ¿Qué mujeres pudieron hacerlo? ¿Qué otras narrativas se han construido respecto a ellas? ¿Cómo estos escritos dialogan con los archivos institucionales masculinos y con la producción actual? ¿Qué nuevos silencios sobre las mujeres nos revelan estos archivos?&lt;/p&gt;
+
+&lt;p&gt;Los archivos más que fuentes u objetos, son &lt;em&gt;sujetos&lt;/em&gt;, nos dice Tortirici (2018), y la &lt;em&gt;Colección escritos de mujeres&lt;/em&gt;, se constituye como un puente que nos permite dialogar con estas mujeres que hasta hoy permanecían ignoradas. Sin embargo, cabe preguntarse también sobre la representatividad de estos escritos respecto a la situación de la mayoría de las mujeres de esa época, y a los nuevos silencios que emergen desde ahí. Sí las mujeres religiosas y de la aristocracia tenían escasamente acceso a las imprentas, ¿qué queda entonces para las que se encontraban fuera de estos círculos? En este sentido, estos relatos no nos hablan solo de la experiencia de las mujeres, sino que más bien de la marginalización e invisibilidad de unas sobre otras. Por tanto, me parece indispensable entrar a estos archivos no solo con un sentido histórico, sino que también interseccional sobre lo que implicaba ser mujer. Así, estos archivos podrían convertirse en una clave para comprender también a la mujer actual, nuestra historia, y el tipo de relaciones incorporadas en las estructuras sociales.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Escritos de mujeres&lt;/em&gt; tiene una plataforma que es accesible a todo público, pues es sencillo localizar los libros digitalizados bajo &lt;a href=&quot;http://www.iisue.unam.mx/escritoras/index.php/ediciones/&quot;&gt;Ediciones&lt;/a&gt;, leer algunas de sus entradas en &lt;a href=&quot;http://www.iisue.unam.mx/escritoras/index.php/blog/&quot;&gt;Blog&lt;/a&gt;, o investigar sus transcripciones marcadas en TEI en &lt;a href=&quot;http://www.iisue.unam.mx/escritoras/index.php/edicion-digital/&quot;&gt;Proyectos Digitales&lt;/a&gt;. Estas identifican la información de acuerdo a nombres, fechas, referencias y términos, lo que amplia los metadatos para favorecer la investigación.&lt;/p&gt;
+
+&lt;p&gt;En definitiva, la &lt;em&gt;Colección escritos de mujeres&lt;/em&gt; del siglo XVI al XVIII, es un proyecto de amplio espectro que todavía está en 
+desarrollo, y que genera grandes expectativas. En el contexto actual, donde las mujeres estamos ganando voz y espacios que nunca tuvimos, este trabajo representa una pieza clave para (re)entender nuestra sociedad y recuperar nuestra memoria desde un espacio subalterno: el de las mujeres. Tal como &lt;strong&gt;Clara Inés Ramírez&lt;/strong&gt;, una de las participantes del proyecto, argumenta, “tenemos la mitad de una historia y no podemos conocer la época sin conocer la otra mitad”.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Referencias&lt;/p&gt;
+
+&lt;p&gt;Tortorici, Zeb. “Introduction.” In &lt;em&gt;Sins Against Nature: Sex and Archives in Colonial New Spain&lt;/em&gt;. 
+Durham: Duke University Press, 2018&lt;/p&gt;
+
+&lt;p&gt;Trouillot, Michel-Rolph. “Chapter 1: The Power in the Story.” &lt;em&gt;Silencing the Past: Power and the Production of History&lt;/em&gt;. Boston: Beacon Press, 1995. 1-31.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/rese%C3%B1a-coleccion-escritos-de-mujeres/&quot;&gt;Reseña de la Colección Escritos de Mujeres&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on October 11, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review for Más de 72]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/Mas-de-72/" />
+  <id>http://localhost:4000/blog/Mas-de-72</id>
+  <published>2018-10-03T00:00:00-04:00</published>
+  <updated>2018-10-03T00:00:00-04:00</updated>
+  <author>
+    <name>Ashley Nelcy Garcia</name>
+    <uri>http://localhost:4000</uri>
+    <email>ashngar@austin.utexas.edu</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;review-for-más-de-72&quot;&gt;Review for &lt;em&gt;Más de 72&lt;/em&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.masde72.periodistasdeapie.org.mx/&quot;&gt;http://www.masde72.periodistasdeapie.org.mx/&lt;/a&gt;, Accessed September 29, 2018 &lt;br /&gt;
+&lt;em&gt;Reviewed by Ashley Nelcy García, Graduate Student, Department of Spanish and Portuguese, The University of Texas at Austin&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What is a digital archive? I asked myself this question weeks before submitting this review. While digital archives are typically defined as a coherent set of digital objects that have been put online by a library or archive, &lt;em&gt;Más de 72&lt;/em&gt; challenges the notion of what we can identify as a digital collection of records.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Más de 72&lt;/em&gt; is a digital project that collects primary sources pertaining to the massacre of 72 migrants from Central and South America and India. The documents and media shared on this site shed some light on the mass murder that occurred in San Fernando, Tamaulipas in 2010, under the administration of Felipe Calderón. The collection was created by &lt;a href=&quot;https://www.periodistasdeapie.org.mx/&quot;&gt;Periodistas de Pie&lt;/a&gt;, an organization of active journalists that seeks to raise the quality of journalism in Mexico. The &lt;a href=&quot;https://www.icfj.org/&quot;&gt;International Center for Journalists&lt;/a&gt; (ICFJ), &lt;a href=&quot;https://www.connectas.org/&quot;&gt;CONNECTAS&lt;/a&gt;, and journalists who were invited to participate in the project supported the development and completion of this project.&lt;/p&gt;
+
+&lt;p&gt;The collection is a valuable resource for individuals interested in Mexico’s recent history, memory, and human rights issues. Visitors can access primary sources such as official documents from Mexico and the United States–including parts of judicial records and declassified files. Testimonies from surviving family members recorded in video and audio by journalists, photographs, and maps are also available. Additionally, journalistic investigations and reports published by human rights entities provide context to users unfamiliar with the case.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Más de 72&lt;/em&gt;’s primary strength is its presentation. The site contains six different tabs or capítulos (chapters) that provide different types of information. For instance, the sections titled &lt;a href=&quot;http://www.masde72.periodistasdeapie.org.mx/capitulo1.html&quot;&gt;“La Masacre”&lt;/a&gt; (The Massacre) and “Después de la Masacre” (After the Massacre) include official and visual documents associated with the mass murder of the 72 migrants. Under these tabs, visitors can access documents like the &lt;a href=&quot;http://2006-2012.semar.gob.mx/sala-prensa/comunicados-2010/1436-comunicado-de-prensa-216-2010.html&quot;&gt;press release&lt;/a&gt; from the Secretaría de Marina (Secretary of Marine) and the &lt;a href=&quot;https://nsarchive2.gwu.edu//NSAEBB/NSAEBB445/docs/20100826.pdf&quot;&gt;diplomatic cable&lt;/a&gt; that the U.S. Embassy sent to the Department of State. Online browsers with an interest in the role of official documents can also download more than 50 files under the tab titled &lt;a href=&quot;http://www.masde72.periodistasdeapie.org.mx/capitulo6.html&quot;&gt;“Transparencia”&lt;/a&gt; (Transparency). On the other hand, users interested in criminal records and procedures and migration studies can access a list of objects found in the location where the massacre occurred and the names of the victims under &lt;a href=&quot;http://www.masde72.periodistasdeapie.org.mx/capitulo2.html&quot;&gt;“Después de la Masacre”&lt;/a&gt;. In regards to organization,  it is important to note that the names of the victims are listed under their country of citizenship and under the month and the year they were identified.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, the tabs titled “Las Víctimas” (The Victimas), “Los Culpables” (The Culprits), and “Sobre San Fernando” (About San Fernando)  provide more detailed information regarding people and location. These sections can benefit visitors interested in oral history, memory, gender studies, and digital cartography. Under &lt;a href=&quot;http://www.masde72.periodistasdeapie.org.mx/capitulo3.html&quot;&gt;“Las Víctimas”&lt;/a&gt;, users can listen to four testimonies provided by victims’ surviving family members. &lt;a href=&quot;http://www.masde72.periodistasdeapie.org.mx/capitulo4.html&quot;&gt;“Los Culpables”&lt;/a&gt; has a list of the men and women involved with the mass murder; this section includes the names, the photos, the list of crimes they committed, and external links that provide additional information. The section titled &lt;a href=&quot;http://www.masde72.periodistasdeapie.org.mx/capitulo5.html&quot;&gt;“San Fernando”&lt;/a&gt; includes a digital map from &lt;a href=&quot;http://timemapper.okfnlabs.org/&quot;&gt;Time Mapper&lt;/a&gt; that helps users identify the mass graves and the people that have been disappeared in Tamaulipas by geographic location.&lt;/p&gt;
+
+&lt;p&gt;Overall, the site benefits users who cannot visit Mexico or Tamaulipas. Aside from scholars, people who can potentially benefit from this repository include but are not limited to: family members of migrants and people who have been disappeared, residents from the state of Tamaulipas, people with relatives in the northern part of the Mexico, journalists, lawyers, and activists. Although the project is not affiliated with libraries, governmental, or academic institutions, Periodistas de Pie is open to working with community members. As stated in &lt;a href=&quot;http://www.masde72.periodistasdeapie.org.mx/creditos.html&quot;&gt;“Creditos”&lt;/a&gt; (Credits), users can share documents or materials by sending an email to the listed email address. In addition, the organization invites visitors to collaborate–either with skills or donations–to continue developing the site.&lt;/p&gt;
+
+&lt;p&gt;There are some technical issues with the website. It would be troubling for someone who is unable to read Spanish to understand the majority of the information included in the platform. Additionally, some links, hyperlinks, and images need to be updated. More descriptive metadata would also benefit the project and there is a need to assist with the second part of the collection titled “Segunda Entrega: Fosas de San Fernando” (Second Delivery: San Fernando’s graves).  While these are minor setbacks, they also provide an opportunity for archivists, scholars, and web developers to get involved with the project.&lt;/p&gt;
+
+&lt;p&gt;It is important to note that &lt;em&gt;Más de 72&lt;/em&gt; is not described as a “digital archive” by Periodistas de Pie. Even though I described how this site serves as a repository for primary sources, we can further use it to reflect in the power of naming. In &lt;a href=&quot;https://escholarship.org/uc/item/75x090df&quot;&gt;“Owning Critical Archival Studies: A plea”&lt;/a&gt;, Michelle Caswell states that naming can help establish a field of study such as critical archival studies. She describes “naming is a form of legitimating, naming is power, naming is a way of demarcating and defining and delineating and harnessing” (9). While naming aids our research practices and dialogues, it can be dangerous for others. In this regard, we need to ask ourselves what counts as an archive. What is at stake when using the term in certain contexts? Especially in those where the creators of these resources find themselves in a violent climate and are rarely protected by institutions of power.&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/Mas-de-72/&quot;&gt;Review for Más de 72&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on October 03, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review of the Onda Latina Collection]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/camille-garcia-digital-archives-review/" />
+  <id>http://localhost:4000/blog/camille-garcia-digital-archives-review</id>
+  <published>2018-09-20T00:00:00-04:00</published>
+  <updated>2018-09-20T00:00:00-04:00</updated>
+  <author>
+    <name>Camille Garcia</name>
+    <uri>http://localhost:4000</uri>
+    <email>camillenicgarcia@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;review-of-the-onda-latina-collection&quot;&gt;Review of the &lt;em&gt;Onda Latina Collection&lt;/em&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Onda Latina Collection&lt;/em&gt;. Nettie Lee Benson Latin American Collection and University of Texas Liberal Arts Instructional Technology Services and the Center for Mexican American Studies and History Department, 2009, http://www.laits.utexas.edu/onda_latina/index. Accessed 18 Sept. 2018.&lt;/p&gt;
+
+&lt;p&gt;As researchers, it’s always particularly interesting to find an archival resource that connects us more deeply to our subject’s humanity. I was reminded of this when I found the &lt;a href=&quot;http://www.laits.utexas.edu/onda_latina/index&quot;&gt;&lt;em&gt;Onda Latina Collection&lt;/em&gt;&lt;/a&gt;, a digital archive that stores the audio recordings of episodes of two radio programs from the years 1976-1982: &lt;em&gt;The Mexican American Experience&lt;/em&gt; and &lt;em&gt;A esta hora conversamos&lt;/em&gt;. Each show featured a discussion on issues related to the Mexican-American community, with members of that community providing insight into the group’s politics, culture, concerns, and history during that time period.&lt;/p&gt;
+
+&lt;p&gt;Before the creation of the &lt;em&gt;Onda Latina Collection&lt;/em&gt; in 2009, the episodes - which aired on the Longhorn Radio Network - existed solely on tapes. The University of Texas’ Nettie Lee Benson Latin American Collection, Liberal Arts Instructional Technology Services, Center for Mexican American Studies, and the History Department collaborated to digitally preserve and organize these tapes of about 200 recordings for the online database. Now, anyone with access to a computer can connect in a more human way to the Mexican-American, Mexican, and Latin American subjects on the show by actually hearing their voices, music, traditions, and stories.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Onda Latina&lt;/em&gt; homepage is a bit cluttered, but once you click on one of the homepage headers, the site is much more intuitive to use. The &lt;a href=&quot;http://www.laits.utexas.edu/onda_latina/about&quot;&gt;&lt;em&gt;“About”&lt;/em&gt;&lt;/a&gt; page, a tab on the homepage, is a helpful starting point where the user can read a more extensive background on the collection and its contents. There, users also can click on the &lt;a href=&quot;http://www.laits.utexas.edu/onda_latina/how_to&quot;&gt;&lt;em&gt;“How to Use This Site”&lt;/em&gt;&lt;/a&gt; link, which takes them to a page that describes in great detail how to use the site to perform research, how the &lt;a href=&quot;http://www.laits.utexas.edu/onda_latina/search?term=no_term&quot;&gt;&lt;em&gt;“Search”&lt;/em&gt;&lt;/a&gt; and &lt;a href=&quot;http://www.laits.utexas.edu/onda_latina/browse?theme=no_theme&quot;&gt;&lt;em&gt;“Browse”&lt;/em&gt;&lt;/a&gt; functions work, and how to properly cite the database. The “How to Use This Site” page is a solid continuous reference point for researchers using the database because it describes how and where the shows came into being; who the hosts were; how the descriptions for each episode were written and who wrote them; and how to take notes when listening to episodes. Providing all of this content in one place likely helps researchers save valuable time in their work and gives them the necessary context to properly interpret the collection.&lt;/p&gt;
+
+&lt;p&gt;The site organizes the episodes in a coherent way, but some of the metadata is lacking. Each episode falls under a broad “Theme” - Culture, Society, Identity, or Politics - and also a smaller category within the “Theme” called “Series.” However, I found that some of these “Series” links do not contain data, which could mean that some stories are simply missing that keyword in their metadata. This also occurs when you attempt to search via the “Keyword” bar. Currently, plugging keywords into the “Search” bar is the most effective way to locate episodes in your interest. Site managers should consider updating that feature so that researchers can have an easier time locating specific topics in each show. Additionally, there is a discrepancy on whether the archive includes 198 recordings or 226. This inconsistency leads me to wonder if the Onda Latina Collection contains every recording from both radio shows, or if it has left some out.&lt;/p&gt;
+
+&lt;p&gt;The search results for episodes make it very clear to understand what each episode is about and whether it will be useful to your research. You are presented with the name of the episode (linked to the actual episode and its landing page), its categorized “Theme” and “Series,” the names of the host and interviewees, the broadcast date, and a brief description of the episode. Click on an episode to read a more detailed description of the episode’s discussion and to listen to or download the episode, if you wish.&lt;/p&gt;
+
+&lt;p&gt;Overall, this digital archive is an easy-to-use, interesting gateway to literally hear stories from the past, many of which are still relevant today and range from curanderismo and Tejano music to education reform and politics. As a researcher, it is key to note that the vast majority of the hosts and producers were Mexican-American and women - the most common host was Dr. Rosa Linda Fregoso - and the guests featured were almost always Mexican-American, Mexican, indigenous, women, or other members of the broader Latin American community. Some guests included famous Conjunto musician Flaco Jiménez and Chicana writer Gloria Anzaldúa, who along with other community members candidly shared their personal experiences and expertise with listeners across Texas and the Southwest United States. In this sense, the creation of the &lt;em&gt;Onda Latina Collection&lt;/em&gt; is a way to literally give voices back to marginalized populations of the time instead of leaving those voices to collect dust as outdated tapes, leaving “history” to be solely defined by what was printed in mass media then. Still, we must recognize the impact the of being beholden to the University of Texas has had on the collection, since the shows were produced, edited, and eventually archived as a university project.&lt;/p&gt;
+
+&lt;p&gt;As Kathryn Burns wrote in &lt;a href=&quot;https://www.amazon.com/Into-Archive-Writing-Power-Colonial/dp/0822348683&quot;&gt;&lt;em&gt;Into the Archive: Writing and Power in Colonial Peru&lt;/em&gt;&lt;/a&gt;, “We historians are fond of regarding archives as windows on the past, or repositories of long-ago ‘voices,’” but if we critically analyze an archive, we often can notice silences and lacks of transparency (Burns 2010, 16-17). This archive is a good place to start comparative research of how larger media outlets and these smaller, community-based outlets reported important Mexican-American issues, keeping in mind, as Burns wrote, whose truth is actually being recorded (Burns 2010, 4).&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/camille-garcia-digital-archives-review/&quot;&gt;Review of the Onda Latina Collection&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on September 20, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[September Events]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/SeptemberEvents/" />
+  <id>http://localhost:4000/blog/SeptemberEvents</id>
+  <published>2018-09-01T00:00:00-04:00</published>
+  <updated>2018-09-01T00:00:00-04:00</updated>
+  <author>
+    <name>Hannah Alpert-Abrams</name>
+    <uri>http://localhost:4000</uri>
+    <email>halperta@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;september-events-at-ut-austin&quot;&gt;September Events at UT Austin&lt;/h1&gt;
+
+&lt;h2 id=&quot;sept-2-lone-star-zine-fest&quot;&gt;Sept 2: &lt;a href=&quot;http://www.lonestarzinefest.org/&quot;&gt;Lone Star Zine Fest&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;September 2, 1pm-6pm&lt;br /&gt;
+The North Door, 501 Brushy St.&lt;br /&gt;
+&lt;a href=&quot;https://www.facebook.com/events/2085777228305927/&quot;&gt;Facebook event info&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Support Texas zine makers at the 2nd Annual Lone Star Zine Fest at the North Door!&lt;/p&gt;
+
+&lt;h2 id=&quot;sept-5-justice-based-practices&quot;&gt;Sept 5: &lt;a href=&quot;https://www.eventbrite.com/e/justice-based-practices-for-archives-and-critical-digital-humanities-registration-49452941078&quot;&gt;Justice-Based Practices&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Justice-Based Practices for Archives and Critical Digital Humanities&lt;/strong&gt;&lt;br /&gt;
+Wed, September 5, 2018: 12:00 PM – 1:30 PM CDT&lt;br /&gt;
+PCL Learning Lab 4 (Perry-Castañeda Library)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.eventbrite.com/e/justice-based-practices-for-archives-and-critical-digital-humanities-registration-49452941078&quot;&gt;Registration&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sept-5-digital-humanities-meet-up&quot;&gt;Sept 5: Digital Humanities Meet-Up&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Digital Humanities / Digital Scholarship Monthly Meet-Up&lt;/strong&gt;&lt;br /&gt;
+September 5, 2018: 4:30-6pm&lt;br /&gt;
+Cactus Cafe&lt;/p&gt;
+
+&lt;p&gt;Learn more: join the list-serve at digitalhumanities@utlists.utexas.edu&lt;/p&gt;
+
+&lt;h2 id=&quot;sept-14-data-and-donuts&quot;&gt;Sept 14: &lt;a href=&quot;https://guides.lib.utexas.edu/data-and-donuts/fall-2018&quot;&gt;Data and Donuts&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Managing Research Data: A Guide to Good Practice&lt;/strong&gt;&lt;br /&gt;
+Jessica Trelogan, Research Data Services (and DH superstar)&lt;br /&gt;
+September 14, 2018: 3-4:30 pm in PCL Learning Lab 1&lt;/p&gt;
+
+&lt;h2 id=&quot;sept-15-black-diaspora-archive-inaugural-event&quot;&gt;Sept 15: &lt;a href=&quot;https://www.lib.utexas.edu/events/134&quot;&gt;Black Diaspora Archive Inaugural Event&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Life, Leadership, and Learning: From the Archive of Edmund W. Gordon&lt;/strong&gt;&lt;br /&gt;
+Friday, Sept 15, 2-4pm&lt;br /&gt;
+Benson Latin American Collection&lt;/p&gt;
+
+&lt;h2 id=&quot;sept-20-queer-archives-with-ann-cvetkovich-and-grayson-hunt&quot;&gt;Sept 20: &lt;a href=&quot;https://docs.google.com/document/d/1oRXH3AoaUfKLhYG3Vz0apCnxWua5mFR3dPHmV-2TVy0/edit#&quot;&gt;Queer Archives with Ann Cvetkovich and Grayson Hunt&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Archives and Social Justice Reading Group&lt;/strong&gt;
+September 20, 2-3pm at Benson LAC special collections meeting room (second floor, down the hall from the bathrooms)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://americanarchivist.org/doi/pdf/10.17723/0360-9081-81.1.65?code=SAME-site&quot;&gt;Erin Baucom: “An Exploration into Archival Descriptions of LGBTQ Materials” (American Archivist, 2018).&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Queering Archives: A Roundtable Discussion. Radical American History Review. 2015.  &lt;a href=&quot;https://drive.google.com/file/d/18ifca16nCxtIFjSNeK8Xt7L0s5N84u9w/view?usp=sharing&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sept-21-data-and-donuts&quot;&gt;Sept 21: &lt;a href=&quot;https://guides.lib.utexas.edu/data-and-donuts/fall-2018&quot;&gt;Data and Donuts&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Metadata Basics&lt;/strong&gt;&lt;br /&gt;
+Melanie Cofield, Head of Access Systems, UT Libraries (and metadata master)&lt;br /&gt;
+September 21, 2018: 3-4:30 pm in PCL Learning Lab 1&lt;/p&gt;
+
+&lt;h2 id=&quot;sept-21-foro-urgente-brazils-museu-nacional&quot;&gt;&lt;a href=&quot;https://www.facebook.com/events/321829198570488/&quot;&gt;Sept 21: Foro Urgente: Brazil’s Museu Nacional&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Cries from the Ashes: Brazil’s Museu Nacional and the Loss of Cultural Heritage&lt;/strong&gt;&lt;br /&gt;
+Friday, Sept. 21&lt;br /&gt;
+12:00-1:30pm&lt;br /&gt;
+SRH 1.208&lt;/p&gt;
+
+&lt;h2 id=&quot;sept-28-data-and-donuts&quot;&gt;Sept 28: &lt;a href=&quot;https://guides.lib.utexas.edu/data-and-donuts/fall-2018&quot;&gt;Data and Donuts&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Designing Surveys with Qualtrics&lt;/strong&gt;&lt;br /&gt;
+Krystal Wyatt-Baxter, Head of Assessment, UT Libraries  &lt;br /&gt;
+September 28, 2018: 3-4:30 pm in PCL Learning Lab 1&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/SeptemberEvents/&quot;&gt;September Events&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on September 01, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Writing in Markdown]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/tutorial/writing-in-markdown/" />
+  <id>http://localhost:4000/tutorial/writing-in-markdown</id>
+  <published>2018-08-06T00:00:00-04:00</published>
+  <updated>2018-08-06T00:00:00-04:00</updated>
+  <author>
+    <name>Hannah Alpert-Abrams</name>
+    <uri>http://localhost:4000</uri>
+    <email>halperta@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;writing-an-article-in-markdown&quot;&gt;Writing an article in markdown&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; is a simple formatting language for writing text. It works a lot like HTML, only it’s a lot easier to use.&lt;/p&gt;
+
+&lt;p&gt;You’ll be writing your blog post in Markdown.&lt;/p&gt;
+
+&lt;p&gt;You have two options for composing the post:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compose in GitHub: Follow steps 1-4 in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Publishing a Digital Review&lt;/code&gt; tutorial. Once you’ve created a new file (in step four) you can compose the file directly in GitHub, using the “commit” feature to save the file online.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can also compose your post using a plain text editor, and then copy and paste it into the GitHub repository. Notebook is one popular program. I like to use &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;Sublime&lt;/a&gt;. Follow these instructions to get started, or &lt;a href=&quot;http://www.halperta.com/criticalarchives/tutorial/writing-in-markdown/&quot;&gt;view the markdown version of this page&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;yaml-header&quot;&gt;YAML header&lt;/h2&gt;
+&lt;p&gt;Your file should begin with a header that looks exactly like this (including the dashes):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+title: &quot;ENTER YOUR TITLE HERE (in quotes)&quot;
+modified:
+categories: blog
+excerpt: &quot;ENTER A PULL QUOTE HERE (in quotes)&quot; (it will show up on the Reviews home page)
+tags: []
+author: ENTER YOUR AUTHOR ID HERE (no quotes)
+image:
+  feature:
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;content&quot;&gt;Content&lt;/h2&gt;
+&lt;p&gt;Below the YAML header, you can start composing your review just as you normally would. The only difference is that you’ll use a very simple form of encoding to add stylistic features like italics, create headings, or add other kinds of formatting.&lt;/p&gt;
+
+&lt;p&gt;You can find detailed instructions on how to write in Markdown &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;here&lt;/a&gt;, or use the following tips:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Headers:  
+    # Heading One  
+    ## Heading Two  
+    ### Heading Three (etc)  
+
+Formatting:  
+	*italics*  
+	**bold**  
+
+Links:  
+	[link text in brackets](url-in-parentheses)
+
+Line Breaks:  
+	End the previous line with two spaces,  
+	then begin writing on the following line to create a line break.  
+
+Paragraphs:
+	Enter a blank line after the end of a paragraph...  
+
+	...before starting a new one.
+
+Accents:  
+	Accents and other diacritics (á, ñ, ü)  
+	can be typed into the text as normal.
+
+Lists:
+	Use 
+		* text
+	to create a disordered list.
+	Use 
+		1. text
+		2. text 
+		3. text 
+	to create an ordered list.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tutorial/writing-in-markdown/&quot;&gt;Writing in Markdown&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on August 06, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Publishing a Digital Review]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/tutorial/blog-instructions/" />
+  <id>http://localhost:4000/tutorial/blog-instructions</id>
+  <published>2018-08-01T00:00:00-04:00</published>
+  <updated>2018-08-01T00:00:00-04:00</updated>
+  <author>
+    <name>Hannah Alpert-Abrams</name>
+    <uri>http://localhost:4000</uri>
+    <email>halperta@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;In this course, you will be asked to write and publish a critical review of a digital collection, using this course website as a platform (&lt;a href=&quot;../../assignments&quot;&gt;more info&lt;/a&gt;). You will do this using GitHub, an online platform for creating and sharing code that is owned by Microsoft.&lt;/p&gt;
+
+&lt;p&gt;You can write your post in a text editor or directly on GitHub. For instructions on writing in markdown, open the &lt;a href=&quot;http://www.halperta.com/criticalarchives/tutorial/writing-in-markdown/&quot;&gt;tutorial for writing in markdown&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To publish your post, you will need to learn how to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create a GitHub account&lt;/li&gt;
+  &lt;li&gt;Fork a GitHub repository&lt;/li&gt;
+  &lt;li&gt;Write your article&lt;/li&gt;
+  &lt;li&gt;Upload your article&lt;/li&gt;
+  &lt;li&gt;Merge your changes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The basic principle for working with GitHub has to do with the way GitHub allows users to share work. On GitHub, users can create a temporary copy, or “fork,” of someone else’s project in their own account. You can make as many changes to the fork as you’d like. To make this website, for example, I made a “fork” of someone else’s website, then modified it to suit my needs.&lt;/p&gt;
+
+&lt;p&gt;As long as you are working with your “fork” of someone else’s project, your changes won’t impact the other project at all. But in this case, you will eventually want to merge your changes with the original project so that they show up on the website. These instructions show you how to do that.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-creating-a-github-account&quot;&gt;Step 1: Creating a GitHub account&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;You can create a GitHub account here:&lt;br /&gt;
+&lt;a href=&quot;https://github.com/&quot;&gt;https://github.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;After you create an account, you’ll need to verify your email before moving on to the next step.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-2-fork-the-critical-digital-archives-website&quot;&gt;Step 2: Fork the Critical Digital Archives Website&lt;/h2&gt;
+&lt;p&gt;[&lt;a href=&quot;https://youtu.be/RDR-BhB-e84&quot;&gt;Watch the video tutorial.&lt;/a&gt;]&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Log in to GitHub.&lt;/li&gt;
+  &lt;li&gt;Navigate to the GitHub project for the Critical Archives website. This is where all the files that make up the website are stored: &lt;a href=&quot;https://github.com/halperta/criticalarchives/&quot;&gt;https://github.com/halperta/criticalarchives/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Fork” the project using the &lt;code class=&quot;highlighter-rouge&quot;&gt;fork&lt;/code&gt; button on the upper right hand corner of the website.&lt;/li&gt;
+  &lt;li&gt;When the “forking” is done, you will automatically be directed to a new copy of the website stored on your GitHub account. Its name should be something like “yourusername/criticalarchives”, and it should say “forked from halperta/criticalarchives” in the upper left corner. This is now your copy of the project.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-3-create-an-author-id&quot;&gt;Step 3: Create an author ID.&lt;/h2&gt;
+&lt;p&gt;You’ll need to create an author ID for the website so that your review can be attributed properly. To do this, follow these steps. Or &lt;a href=&quot;https://youtu.be/RDR-BhB-e84&quot;&gt;watch the video tutorial.&lt;/a&gt; (Note: turn on closed captions to view the text instructions.)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Log in to GitHub and navigate to your fork of the critical archives website. If you don’t remember the URL, you can find the fork among your repositories. Your repositories should be linked from your GitHub home page.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Important:&lt;/strong&gt; Change the branch from &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;. To do this, find the drop-down menu that says “branch” near the top left of the page, and select &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages.&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Navigate to the “author” file (&lt;code class=&quot;highlighter-rouge&quot;&gt;_data/authors.yml&lt;/code&gt;):
+    &lt;ul&gt;
+      &lt;li&gt;Click on the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; directory to open it.&lt;/li&gt;
+      &lt;li&gt;Click on the &lt;code class=&quot;highlighter-rouge&quot;&gt;authors.yml&lt;/code&gt; file.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open the file for editing&lt;/strong&gt;: click on the pen icon in the upper right corner of the screen.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Create a biographical entry:&lt;/strong&gt; copy someone else’s entry and paste it at the bottom of the document, replacing their information with your own info. At the very least, you should add a single-word author id, as well as your name. If you want to have a photograph of yourself to link to the page, enter the file name of the image, including the extension, under “avatar.” It should look something like this:&lt;/p&gt;
+
+    &lt;p&gt;authorid: oneword&lt;br /&gt;
+    name: Enter Name Here&lt;br /&gt;
+    email: email@utexas.edu&lt;br /&gt;
+    bio:&lt;br /&gt;
+    avatar:  image.jpg&lt;br /&gt;
+    twitter:  handle&lt;br /&gt;
+    google:&lt;br /&gt;
+      plus:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Commit your changes:&lt;/strong&gt; Once you’ve added your own author entry to the file, “commit changes”:
+    &lt;ul&gt;
+      &lt;li&gt;At the bottom of the page, in the text block where it says “Update authors.yml,” enter a brief description of your proposed change. It should be something like: &lt;code class=&quot;highlighter-rouge&quot;&gt;Added author: Hannah Alpert-Abrams.&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Click “commit.”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Optional)&lt;/em&gt;: If you want to upload an author image:
+    &lt;ul&gt;
+      &lt;li&gt;Return to the home page of your fork of the Critical Archives project.&lt;/li&gt;
+      &lt;li&gt;Switch the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch using the drop-down menu.&lt;/li&gt;
+      &lt;li&gt;Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;images&lt;/code&gt; directory.&lt;/li&gt;
+      &lt;li&gt;In the upper right corner, click &lt;code class=&quot;highlighter-rouge&quot;&gt;upload files.&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Drag and drop your image to upload the image.&lt;/li&gt;
+      &lt;li&gt;Write a commit message: at the bottom, where it says “Add files via upload,” write a brief message describing your change, i.e. “Uploading author photo for Hannah Alpert-Abrams.”&lt;/li&gt;
+      &lt;li&gt;Click &lt;code class=&quot;highlighter-rouge&quot;&gt;commit changes&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Merge your changes:&lt;/strong&gt; To update the website, you’ll need to merge your changes back into the original project by following these steps.
+    &lt;ul&gt;
+      &lt;li&gt;Navigate to the repository home page and choose the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch from the drop-down menu.&lt;/li&gt;
+      &lt;li&gt;Click the &lt;code class=&quot;highlighter-rouge&quot;&gt;New pull request&lt;/code&gt; button, which is right next to the &lt;code class=&quot;highlighter-rouge&quot;&gt;branch&lt;/code&gt; dropdown menu.&lt;/li&gt;
+      &lt;li&gt;Make sure the base fork is &lt;code class=&quot;highlighter-rouge&quot;&gt;halperta/criticalarchives&lt;/code&gt; and the branch is &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;. The head fork should be &lt;code class=&quot;highlighter-rouge&quot;&gt;yourusername/criticalarchives&lt;/code&gt; and the branch should be &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;In the comment box, make sure the description matches what you’re doing. It should say something like “Adding author id and photo for Hannah Alpert-Abrams.”&lt;/li&gt;
+      &lt;li&gt;Click &lt;code class=&quot;highlighter-rouge&quot;&gt;Create pull request&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We’ll check and approve your changes before the modification goes live.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-4-write-your-article&quot;&gt;Step 4: Write your article&lt;/h2&gt;
+&lt;p&gt;Instructions for writing an article in markdown &lt;a href=&quot;http://www.halperta.com/criticalarchives/tutorial/writing-in-markdown/&quot;&gt;are found here.&lt;/a&gt; Please note that you must include a YAML header, and use markdown for formatting.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-5-upload-your-review&quot;&gt;Step 5: Upload your review&lt;/h2&gt;
+&lt;p&gt;Uploading your review is going to look a lot like editing your author id. The only difference is that you’ll be having someone review your changes before you merge them with the website. You can also watch the &lt;a href=&quot;https://youtu.be/TRhuFvoOZXk&quot;&gt;video tutorial&lt;/a&gt;. Note: turn on closed captions to view the text instructions].&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Log in to GitHub&lt;/strong&gt; and navigate to your fork of the Critical Archives repository. Confirm that you’re in your fork: it should be called “yourusername/criticalarchives” and it should be forked from “halperta/criticalarchives.”&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Confirm location&lt;/strong&gt;: Switch to the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch (upper left corner). Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts/blog&lt;/code&gt; directory.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Create file&lt;/strong&gt;: In the upper right corner, click on the button that reads &lt;code class=&quot;highlighter-rouge&quot;&gt;create new file&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Name your file&lt;/strong&gt; using the date you’re planning to publish the review (your second due-date). The name should be &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-short-title.md&lt;/code&gt; . For example, this tutorial is named &lt;code class=&quot;highlighter-rouge&quot;&gt;2018-08-01-blog-instructions.md&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Copy and paste&lt;/strong&gt; the text of your review into the text box. Use the &lt;code class=&quot;highlighter-rouge&quot;&gt;preview&lt;/code&gt; tab (just to the right of the &lt;code class=&quot;highlighter-rouge&quot;&gt;edit new file&lt;/code&gt; tab) to see what your post will look like. (&lt;em&gt;Note: If you feel comfortable on GitHub, you can write your review directly into this text editor.&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Save&lt;/strong&gt; the text of your review on GitHub by “committing a new file”:
+    &lt;ol&gt;
+      &lt;li&gt;At the bottom of the page, in the text block where it says “Create filename.md,” enter a brief description of your proposed change. It should be something like: “Creating review of Article Title by Your Name.”&lt;/li&gt;
+      &lt;li&gt;Click “commit new file” to save your updates to your fork of the website.&lt;/li&gt;
+      &lt;li&gt;You can continue editing this file. Just make sure you’re always in your fork of the website (&lt;code class=&quot;highlighter-rouge&quot;&gt;yourusername/criticalwebsite&lt;/code&gt;) and that you’re always in the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-6-merge-your-changes&quot;&gt;Step 6: Merge your changes&lt;/h2&gt;
+&lt;p&gt;[&lt;a href=&quot;https://youtu.be/54ORGhWaFKE&quot;&gt;Watch the video tutorial.&lt;/a&gt; Note: turn on closed captions to view the text instructions.]&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Navigate to your forked repository. You can do this by navigating to your profile, opening the &lt;code class=&quot;highlighter-rouge&quot;&gt;repositories&lt;/code&gt; tab, and then selecting the &lt;code class=&quot;highlighter-rouge&quot;&gt;critical archives&lt;/code&gt; repository. You can also follow the URL directly: it should be something like &lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/username/criticalarchives&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;At the top of the page, you should see a highlighted alert showing your &lt;code class=&quot;highlighter-rouge&quot;&gt;recently pushed branches.&lt;/code&gt; Click the green tab that says &lt;code class=&quot;highlighter-rouge&quot;&gt;Compare &amp;amp; Pull Request.&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open a pull request:&lt;/strong&gt; Make sure that the &lt;em&gt;base fork&lt;/em&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;halperta/criticalarchives&lt;/code&gt;, the &lt;em&gt;base&lt;/em&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;, the &lt;em&gt;head fork&lt;/em&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;yourusername/criticalarchives&lt;/code&gt;, and &lt;em&gt;compare&lt;/em&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;In the comment box, write: &lt;code class=&quot;highlighter-rouge&quot;&gt;submitting review for publication by Your Name&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Click &lt;code class=&quot;highlighter-rouge&quot;&gt;Create Pull Request&lt;/code&gt;. Your changes will be reviewed before being published.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tutorial/blog-instructions/&quot;&gt;Publishing a Digital Review&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on August 01, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Welcome]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/welcome/" />
+  <id>http://localhost:4000/blog/welcome</id>
+  <published>2018-07-31T00:00:00-04:00</published>
+  <updated>2018-07-31T00:00:00-04:00</updated>
+  <author>
+    <name>Hannah Alpert-Abrams</name>
+    <uri>http://localhost:4000</uri>
+    <email>halperta@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Welcome to “Critical Digital Archives,” a graduate seminar taught by Kelly McDonough and Hannah Alpert-Abrams.&lt;/p&gt;
+
+&lt;p&gt;Looking for the syllabus? Follow these links for the &lt;a href=&quot;../../schedule&quot;&gt;schedule&lt;/a&gt; and &lt;a href=&quot;../../assignments&quot;&gt;assignments&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Want to find out about office hours and faculty contact information? Check out the &lt;a href=&quot;../../about&quot;&gt;About page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the future, this page will feature critical digital archive reviews written by students.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/welcome/&quot;&gt;Welcome&lt;/a&gt; was originally published by Hannah Alpert-Abrams at &lt;a href=&quot;http://localhost:4000&quot;&gt;Critical Digital Archives&lt;/a&gt; on July 31, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
 </feed>
