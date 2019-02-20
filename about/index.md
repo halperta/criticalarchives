@@ -2,7 +2,7 @@
 layout: page
 title: About This Course
 excerpt: "This course explores theoretical and practical issues related to the creation and access of Latin American digital archives."
-modified: 2014-08-08T19:44:38.564948-04:00
+modified: 
 image:
   feature:
 <!-- image:
@@ -10,6 +10,8 @@ image:
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/ -->
 ---
+
+Critical Digital Archives was taught in the fall of 2018. This website was finalized as a static site in February of 2019 and archived on archive.org.
 
 # Instructors 
 
