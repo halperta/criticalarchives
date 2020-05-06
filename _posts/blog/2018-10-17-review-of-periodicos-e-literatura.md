@@ -13,6 +13,8 @@ image:
 Irineu E. Jones Corrêa et al., *Periódicos e Literatura*, Biblioteca Nacional Digital de Brasil, Fundação Biblioteca Nacional de Brasil, 2006, bndigital.bn.gov.br/dossies/periodicos-literatura/. Accessed 1 October 2018.
 
 *Reviewed by Joshua G. Ortiz Baco, University of Texas at Austin* 
+
+**2020 update: [The Digital Library of Brazil as a new webste!](https://brpdfs.info/)**
 	
 The project [*"Periódicos e literatura: publicações efêmeras, memória permanente"*](https://bndigital.bn.gov.br/dossies/periodicos-literatura) is a curated collection of materials digitized by the [*National Digital Library of Brazil*](http://bndigital.bn.gov.br/hemeroteca-digital/) (NDLB) with originals housed in the [*National Library of Brazil Foundation*](https://bn.gov.br/) (Foundation). Coordination of the objects, researchers, staff, and content is done by Irineu E. Jones Corrêa, Maria Ione Caser da Costa and Maria do Sameiro Fangueiro. The dossiê, as the collection type is referred to, is focused on developing the NDLB's larger collection of Brazilian and Portuguese periodicals by expanding, describing and showcasing materials across different physical collections that highlight the relationship between the evolution of the press industry, authors and literature. The legalization of the press in Imperial Brazil, at the beginning of the 19th century, had an almost immediate impact as a public space for discussions about literature which this project seeks to recover and put into context. 
 
